@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Only Inside, massage sensoriel par Eugénie. Un espace pour ralentir, revenir dans le corps et laisser tomber ce qui tient.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#D6C6B8">
+  <title>Only Inside | Massage sensoriel par Eugénie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a class="logo" href="#top">Only Inside</a>
+
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#soin">Le soin</a>
+        <a href="#eugenie">Eugénie</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#reservation">Réserver</a>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#soin">Le soin</a>
+      <a href="#eugenie">Eugénie</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#reservation">Réserver</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <p class="brand">Only Inside</p>
+      <h1>Revenir dans le corps.</h1>
+      <p class="subtitle">Et laisser tomber ce qui tient.</p>
+      <a class="btn" href="#reservation">Réserver</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section light" id="espace">
+      <div class="container narrow">
+        <h2>L'espace</h2>
+        <p>
+          Un moment pour ralentir.<br>
+          Ici, rien à atteindre.<br>
+          Rien à réussir.<br>
+          Juste un espace pour se déposer,<br>
+          et laisser le corps faire.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="soin">
+      <div class="container narrow">
+        <h2>Le soin</h2>
+        <p>
+          Je propose un massage unique.<br>
+          Un soin enveloppant, lent, parfois profond.<br>
+          Un toucher qui s'adapte, qui écoute,<br>
+          qui suit plutôt qu'il ne dirige.<br>
+          Le reste se découvre.
+        </p>
+      </div>
+    </section>
+
+    <section class="section light" id="pour-qui">
+      <div class="container narrow">
+        <h2>Pour qui</h2>
+        <p>
+          Pour celles et ceux qui ressentent le besoin de ralentir.<br>
+          Pour les corps fatigués de tenir.<br>
+          Pour les personnes qui cherchent moins à aller mieux<br>
+          qu'à revenir à quelque chose de plus vrai.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="eugenie">
+      <div class="container narrow">
+        <h2>Eugénie</h2>
+        <p>
+          Je m'appelle Eugénie.<br>
+          Je suis gersoise d'origine.<br>
+          Mon chemin m'a menée du monde du luxe aux ashrams en Inde,<br>
+          avant de revenir à quelque chose de plus simple.<br>
+          Aujourd'hui, j'accompagne par le corps,<br>
+          avec une approche nourrie par le yoga, la méditation<br>
+          et les thérapies humanistes.<br>
+          Ce que je propose n'est pas une technique.<br>
+          C'est une présence.
+        </p>
+      </div>
+    </section>
+
+    <section class="section light" id="tarifs">
+      <div class="container narrow">
+        <h2>Tarifs</h2>
+        <ul class="prices">
+          <li><span>1h10</span><strong>80&euro;</strong></li>
+          <li><span>1h30</span><strong>100&euro;</strong></li>
+        </ul>
+        <p>(temps d'accueil et de retour au calme inclus)</p>
+      </div>
+    </section>
+
+    <section class="section" id="reservation">
+      <div class="container narrow">
+        <h2>Réservation</h2>
+        <p>
+          Prendre ce temps pour soi.<br>
+          Les rendez-vous se font simplement,<br>
+          en me contactant directement.<br>
+          Les créneaux sont limités.<br>
+          Je vous répondrai avec attention.
+        </p>
+        <div class="contact-links">
+          <a class="btn" href="https://wa.me/33600000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a class="btn" href="mailto:bonjour@onlyinside.fr">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const nav = document.querySelector(".site-nav");
+    const burger = document.querySelector(".burger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    window.addEventListener("scroll", () => {
+      nav.classList.toggle("scrolled", window.scrollY > 20);
+    });
+
+    burger.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("open");
+      burger.setAttribute("aria-expanded", String(isOpen));
+    });
+  </script>
+</body>
+</html>
