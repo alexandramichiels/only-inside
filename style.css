@@ -142,7 +142,7 @@ a {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: var(--bg);
+  background-color: #ede0d4;
 }
 
 .hero .container {
@@ -168,10 +168,10 @@ a {
 
 .tagline {
   font-family: 'Jost', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  color: var(--accent);
-  letter-spacing: 0.15em;
+  color: #6E5A4E;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
