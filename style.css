@@ -179,6 +179,15 @@ a {
   margin-bottom: 3rem;
 }
 
+.hero-signature {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #8A8682;
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+}
+
 .btn {
   margin-top: 2.2rem;
   display: inline-block;
