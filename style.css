@@ -261,17 +261,8 @@ a {
   background-attachment: fixed;
 }
 
-#reservation {
-  position: relative;
-  background-image: url('images/algues.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 #espace::before,
-#pour-qui::before,
-#reservation::before {
+#pour-qui::before {
   content: '';
   position: absolute;
   top: 0;
@@ -289,16 +280,20 @@ a {
   background-color: rgba(214, 198, 184, 0.7);
 }
 
-#reservation::before {
-  background-color: rgba(222, 200, 181, 0.72);
-}
-
 #espace > .container,
 #espace > .container-split,
 #pour-qui > .container,
 #reservation > .container {
   position: relative;
   z-index: 1;
+}
+
+#cadre {
+  background: #D6C6B8;
+}
+
+#reservation {
+  background: #F5EFE6;
 }
 
 .section h2 {
@@ -530,8 +525,7 @@ footer {
 
   #espace,
   #soin,
-  #pour-qui,
-  #reservation {
+  #pour-qui {
     background-attachment: scroll;
   }
 
