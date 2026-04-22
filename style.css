@@ -248,23 +248,18 @@ a {
   max-width: 600px;
 }
 
-.eugenie-layout {
+.eugenie-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2.5rem;
+  align-items: center;
+  gap: 4rem;
 }
 
 .eugenie-photo {
-  width: 45%;
-  height: 500px;
+  width: 380px;
+  height: 480px;
   object-fit: cover;
+  object-position: top;
   flex-shrink: 0;
-}
-
-.eugenie-text {
-  width: 55%;
-  max-width: 600px;
 }
 
 .prices {
@@ -342,18 +337,13 @@ footer {
     background-attachment: scroll;
   }
 
-  .eugenie-layout {
+  .eugenie-container {
     flex-direction: column;
   }
 
   .eugenie-photo {
     width: 100%;
-    height: 300px;
-    margin-bottom: 2rem;
-  }
-
-  .eugenie-text {
-    width: 100%;
+    height: 350px;
   }
 }
 
