@@ -490,28 +490,46 @@ a {
 footer {
   background-color: #6E5A4E;
   color: #F5EFE6;
-  padding: 60px 8vw 30px;
+  padding: 70px 8vw 30px;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1.5fr 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
+  align-items: center;
+}
+
+.footer-col-center {
+  text-align: center;
+  border-left: 1px solid rgba(245,239,230,0.2);
+  border-right: 1px solid rgba(245,239,230,0.2);
+  padding: 0 2rem;
 }
 
 .footer-logo {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
   margin-bottom: 0.5rem;
 }
 
-.footer-title {
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
+.footer-tagline {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #CBBFA3;
-  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+}
+
+.footer-title {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #CBBFA3;
+  margin-bottom: 1.2rem;
 }
 
 .footer-col a {
@@ -519,8 +537,9 @@ footer {
   color: #F5EFE6;
   text-decoration: none;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  opacity: 0.8;
+  margin-bottom: 0.6rem;
+  opacity: 0.75;
+  transition: opacity 0.3s;
 }
 
 .footer-col a:hover {
@@ -530,16 +549,17 @@ footer {
 
 .footer-col p {
   font-size: 0.9rem;
-  opacity: 0.7;
-  margin-bottom: 0.3rem;
+  opacity: 0.65;
+  margin-bottom: 0.4rem;
 }
 
 .footer-copy {
   text-align: center;
-  font-size: 0.8rem;
-  opacity: 0.5;
-  border-top: 1px solid rgba(245,239,230,0.2);
+  font-size: 0.75rem;
+  opacity: 0.4;
+  border-top: 1px solid rgba(245,239,230,0.15);
   padding-top: 1.5rem;
+  letter-spacing: 0.08em;
 }
 
 @media (min-width: 900px) {
@@ -604,7 +624,16 @@ footer {
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .footer-col-center {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(245,239,230,0.2);
+    border-bottom: 1px solid rgba(245,239,230,0.2);
+    padding: 2rem 0;
   }
 }
 
