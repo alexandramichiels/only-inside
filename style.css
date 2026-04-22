@@ -262,8 +262,26 @@ a {
   background-attachment: fixed;
 }
 
+#soin {
+  position: relative;
+  background-image: url('images/arc.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#aussi {
+  position: relative;
+  background-image: url('images/couché.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 #espace::before,
-#pour-qui::before {
+#pour-qui::before,
+#soin::before,
+#aussi::before {
   content: '';
   position: absolute;
   top: 0;
@@ -281,9 +299,19 @@ a {
   background-color: rgba(214, 198, 184, 0.7);
 }
 
+#soin::before {
+  background-color: rgba(214, 198, 184, 0.65);
+}
+
+#aussi::before {
+  background-color: rgba(214, 198, 184, 0.7);
+}
+
 #espace > .container,
 #espace > .container-split,
+#soin > .container,
 #pour-qui > .container,
+#aussi > .container,
 #reservation > .container {
   position: relative;
   z-index: 1;
@@ -294,7 +322,8 @@ a {
 }
 
 #reservation {
-  background: #F5EFE6;
+  background: #D6C6B8;
+  background-image: none;
 }
 
 .section h2 {
@@ -531,7 +560,8 @@ footer {
 
   #espace,
   #soin,
-  #pour-qui {
+  #pour-qui,
+  #aussi {
     background-attachment: scroll;
   }
 
