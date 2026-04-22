@@ -163,10 +163,11 @@ a {
 .hero .container {
   position: relative;
   z-index: 1;
-  background-color: rgba(245, 239, 230, 0.75);
-  padding: 3rem 4rem;
-  backdrop-filter: blur(4px);
-  max-width: 650px;
+  background-color: rgba(245, 239, 230, 0.55);
+  padding: 4rem 6rem;
+  backdrop-filter: blur(2px);
+  max-width: 750px;
+  width: 100%;
 }
 
 .brand {
@@ -517,6 +518,11 @@ footer {
     padding-top: 120px;
     padding-bottom: 80px;
     background-attachment: scroll;
+  }
+
+  .hero .container {
+    padding: 2.5rem 2rem;
+    max-width: 100%;
   }
 
   .hero-title {
