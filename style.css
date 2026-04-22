@@ -302,6 +302,34 @@ a {
   letter-spacing: 0.1em;
 }
 
+.sous-titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #6E5A4E;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.faq-item {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #dec8b5;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d3927c;
+  margin-bottom: 0.8rem;
+}
+
 .eugenie-container {
   display: flex;
   align-items: center;
