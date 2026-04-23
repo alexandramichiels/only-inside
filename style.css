@@ -47,9 +47,9 @@ a {
 }
 
 .container {
+  max-width: 1400px;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 6vw;
+  padding: 0 4vw;
   margin: 0 auto;
 }
 
@@ -59,8 +59,9 @@ a {
 }
 
 .container.narrow {
-  max-width: 750px;
-  padding: 0 6vw;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 4vw;
   margin: 0 auto;
 }
 
@@ -78,6 +79,7 @@ nav {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   letter-spacing: 0.08em;
+  padding: 0 4vw;
 }
 
 .site-nav.scrolled {
@@ -90,6 +92,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -416,12 +420,13 @@ section p, section h2, section h3,
 }
 
 .container-split {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 4vw;
+  margin: 0 auto;
+  gap: 5rem;
   display: flex;
   align-items: center;
-  gap: 6rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 6vw;
 }
 
 .container-split.reverse {
@@ -429,7 +434,7 @@ section p, section h2, section h3,
 }
 
 .split-image {
-  flex: 1.4;
+  flex: 1.2;
 }
 
 .split-photo {
@@ -440,7 +445,7 @@ section p, section h2, section h3,
 }
 
 .split-text {
-  flex: 0.6;
+  flex: 1;
   padding: 1rem 0;
 }
 
