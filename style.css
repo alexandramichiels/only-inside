@@ -194,7 +194,16 @@ nav {
   max-width: 600px;
   margin-left: 8vw;
   margin-right: auto;
-  padding-top: 8vh;
+  padding-top: 6vh;
+  text-align: left;
+}
+
+.hero-title,
+.tagline,
+.hero-signature,
+.hero .btn {
+  margin-left: 0;
+  padding-left: 0;
   text-align: left;
 }
 
