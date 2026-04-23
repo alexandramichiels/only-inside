@@ -433,7 +433,7 @@ section p, section h2, section h3,
   width: 100%;
   padding: 0 4vw;
   margin: 0 auto;
-  gap: 5rem;
+  gap: 4rem;
   display: flex;
   align-items: center;
 }
@@ -574,13 +574,14 @@ section p, section h2, section h3,
 }
 
 .eugenie-text p {
+  text-align: justify;
   line-height: 2;
   margin-bottom: 1rem;
 }
 
 .eugenie-photo {
   width: 380px;
-  height: 480px;
+  height: 550px;
   object-fit: cover;
   object-position: top;
   flex-shrink: 0;
