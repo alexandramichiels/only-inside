@@ -115,9 +115,10 @@ nav {
 }
 
 .nav-links a {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .nav-links a:hover,
