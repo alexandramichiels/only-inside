@@ -474,6 +474,20 @@ section p, section h2, section h3,
   padding: 1rem 0;
 }
 
+#espace .container-split {
+  gap: 1rem;
+}
+
+#espace .split-image {
+  flex: 0 0 auto;
+  width: 45%;
+}
+
+#espace .split-text {
+  flex: 1;
+  padding-left: 1rem;
+}
+
 .split-text h2 {
   margin-bottom: 1.5rem;
 }
