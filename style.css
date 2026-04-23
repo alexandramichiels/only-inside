@@ -85,7 +85,7 @@ a {
 }
 
 .nav-logo {
-  height: 60px;
+  height: 90px;
   width: auto;
 }
 
@@ -340,6 +340,15 @@ a {
   background-image: none;
 }
 
+#faq {
+  background-color: #D6C6B8;
+}
+
+#ou-me-trouver,
+#aussi {
+  background-position: center 30%;
+}
+
 .section h2 {
   font-size: 2.2rem;
   font-weight: 400;
@@ -388,6 +397,44 @@ a {
 .split-text p {
   line-height: 2;
   font-size: 1.1rem;
+}
+
+.tarifs-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tarif-unique {
+  margin-top: 2rem;
+  padding: 2.5rem;
+  border: 1px solid #dec8b5;
+  max-width: 320px;
+}
+
+.tarif-duree {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8A8682;
+  margin-bottom: 0.5rem;
+}
+
+.tarif-prix {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #6E5A4E;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+
+.tarif-note {
+  font-size: 0.85rem;
+  color: #8A8682;
+  line-height: 1.7;
+  font-style: italic;
 }
 
 .citation {
