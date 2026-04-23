@@ -194,7 +194,7 @@ nav {
   max-width: 600px;
   margin-left: 8vw;
   margin-right: auto;
-  padding-top: 6vh;
+  padding-top: 4vh;
   text-align: left;
 }
 
@@ -251,6 +251,11 @@ nav {
 }
 
 .hero .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.8rem 2rem;
   border-color: rgba(255,255,255,0.9);
   color: #FFFFFF;
 }
