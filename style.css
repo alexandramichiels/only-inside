@@ -342,12 +342,23 @@ nav {
 }
 
 #soin::before {
-  background-color: rgba(245, 239, 230, 0.92);
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(245, 239, 230, 0.78);
+  z-index: 0;
 }
 
-#soin .container {
+#soin .container-split {
   position: relative;
   z-index: 1;
+}
+
+#soin .split-text p,
+#soin .split-text h2,
+#soin .sous-titre {
+  color: #4a3a32;
 }
 
 #aussi::before {
