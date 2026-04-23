@@ -194,7 +194,7 @@ nav {
   max-width: 600px;
   margin-left: 8vw;
   margin-right: auto;
-  padding-top: 4vh;
+  padding-top: 2vh;
   text-align: left;
 }
 
@@ -228,7 +228,7 @@ nav {
 
 .tagline {
   font-family: 'Jost', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 300;
   color: rgba(255,255,255,0.9);
   text-shadow: 0 1px 15px rgba(0,0,0,0.2);
@@ -242,7 +242,7 @@ nav {
   font-family: 'Cormorant Garamond', serif;
   color: rgba(255,255,255,0.85);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-style: italic;
   text-shadow: none;
   margin-top: -1rem;
