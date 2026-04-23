@@ -567,26 +567,28 @@ section p, section h2, section h3,
 
 .eugenie-container {
   display: flex;
-  align-items: center;
-  gap: 4rem;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
 .eugenie-text {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .eugenie-text p {
   text-align: justify;
-  line-height: 2;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.8;
 }
 
 .eugenie-photo {
-  width: 380px;
-  height: 550px;
+  width: 350px;
+  min-width: 350px;
+  height: auto;
   object-fit: cover;
   object-position: top;
   flex-shrink: 0;
