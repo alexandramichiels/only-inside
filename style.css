@@ -56,6 +56,11 @@ a {
   margin: 0 auto;
 }
 
+.container.narrow {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
 .site-nav {
   position: fixed;
   top: 0;
@@ -349,16 +354,24 @@ a {
   background-position: center 30%;
 }
 
-.section h2 {
+section h2 {
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: 0.05em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
   color: var(--text);
 }
 
 .section p {
   max-width: 600px;
+}
+
+.container p,
+.container-split p,
+.narrow p {
+  line-height: 1.95;
+  margin-bottom: 0.9rem;
+  font-size: 1.05rem;
 }
 
 .container-split {
@@ -491,6 +504,18 @@ a {
   gap: 4rem;
 }
 
+.eugenie-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.eugenie-text p {
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
 .eugenie-photo {
   width: 380px;
   height: 480px;
@@ -562,18 +587,20 @@ footer {
 
 .footer-logo {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem;
+  font-size: 3rem;
   font-weight: 300;
   letter-spacing: 0.08em;
   color: #F5EFE6;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .footer-tagline {
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: none;
   color: #F5EFE6;
+  opacity: 0.85;
   margin-top: 0.3rem;
 }
 
