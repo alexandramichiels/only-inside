@@ -190,7 +190,8 @@ nav {
   max-width: 600px;
   margin-left: 8vw;
   margin-right: auto;
-  padding-top: 12vh;
+  padding-top: 8vh;
+  text-align: left;
 }
 
 .brand {
@@ -209,6 +210,7 @@ nav {
   text-shadow: 0 2px 25px rgba(0,0,0,0.25);
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .tagline {
@@ -220,6 +222,7 @@ nav {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 3rem;
+  text-align: left;
 }
 
 .hero-signature {
@@ -231,6 +234,7 @@ nav {
   text-shadow: none;
   margin-top: -1rem;
   margin-bottom: 2.5rem;
+  text-align: left;
 }
 
 .hero .btn {
