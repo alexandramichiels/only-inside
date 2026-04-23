@@ -360,6 +360,10 @@ a {
   padding: 0 8vw;
 }
 
+.container-split.reverse {
+  flex-direction: row-reverse;
+}
+
 .split-image {
   flex: 1.4;
 }
@@ -615,6 +619,10 @@ footer {
   .container-split {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .container-split.reverse {
+    flex-direction: column;
   }
 
   .split-photo {
