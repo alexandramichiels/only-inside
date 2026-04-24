@@ -518,6 +518,10 @@ section p, section h2, section h3,
   padding-left: 1rem;
 }
 
+#pour-qui .container-split {
+  gap: 1rem;
+}
+
 .split-text h2 {
   margin-bottom: 1.5rem;
 }
