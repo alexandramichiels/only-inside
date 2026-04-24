@@ -228,7 +228,7 @@ nav {
 
 .tagline {
   font-family: 'Jost', sans-serif;
-  font-size: 1.8rem;
+  font-size: 3.6rem;
   font-weight: 300;
   color: rgba(255,255,255,0.9);
   text-shadow: 0 1px 15px rgba(0,0,0,0.2);
@@ -240,7 +240,7 @@ nav {
 
 .hero-signature {
   font-family: 'Cormorant Garamond', serif;
-  color: #8A8682;
+  color: #FFFFFF;
   font-weight: 500;
   font-size: 1.5rem;
   font-style: italic;
