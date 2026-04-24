@@ -363,6 +363,10 @@ nav {
   color: #4a3a32;
 }
 
+#soin .split-text:last-child {
+  text-align: left;
+}
+
 #aussi::before {
   content: '';
   position: absolute;
