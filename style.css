@@ -581,7 +581,7 @@ section p, section h2, section h3,
 
 .tarif-duree {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 300;
   letter-spacing: 0.15em;
   color: #8A8682;
@@ -590,7 +590,7 @@ section p, section h2, section h3,
 
 .tarif-prix {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 300;
   color: #6E5A4E;
   line-height: 1;
