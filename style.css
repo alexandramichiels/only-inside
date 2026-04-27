@@ -445,6 +445,14 @@ nav {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
+#soin .split-text:first-child {
+  flex: 0 0 52%;
+}
+
+#soin .split-text:last-child {
+  flex: 0 0 42%;
+}
+
 #soin .split-text h2,
 #soin .split-text .sous-titre {
   color: #6E5A4E;
@@ -594,12 +602,11 @@ section p, section h2, section h3,
 }
 
 #espace .split-image {
-  flex: 0 0 auto;
-  width: 45%;
+  flex: 0 0 42%;
 }
 
 #espace .split-text {
-  flex: 1;
+  flex: 0 0 52%;
   padding-left: 1rem;
 }
 
