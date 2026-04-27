@@ -449,6 +449,8 @@ nav {
 
 #cadre .container-split {
   gap: 1cm;
+  position: relative;
+  z-index: 2;
 }
 
 #cadre::before {
@@ -456,13 +458,15 @@ nav {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: transparent;
+  background-color: rgba(214, 198, 184, 0.78);
   z-index: 0;
 }
 
-#cadre .container {
+#cadre .container,
+#cadre .split-image,
+#cadre .split-text {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 #reservation {
