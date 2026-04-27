@@ -697,16 +697,25 @@ section p, section h2, section h3,
 
 .eugenie-container {
   display: flex;
-  gap: 1rem;
+  gap: 1cm;
   align-items: flex-start;
 }
 
 .eugenie-text {
-  flex: 1;
+  flex: 1.2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0;
+}
+
+.eugenie-photo-caption {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #6E5A4E;
+  text-align: center;
+  max-width: 350px;
+  line-height: 1.7;
 }
 
 .eugenie-text p {
