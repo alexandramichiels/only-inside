@@ -369,6 +369,21 @@ nav {
   color: #4b382d;
 }
 
+#section-aussi-columns {
+  column-count: 2;
+  column-gap: 3rem;
+}
+
+#section-aussi-columns p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  #section-aussi-columns {
+    column-count: 1;
+  }
+}
+
 #cadre .container-split {
   gap: 2.5rem;
   align-items: center;
