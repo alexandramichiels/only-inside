@@ -516,7 +516,7 @@ nav {
 }
 
 #cadre .container-split {
-  gap: 2.5rem;
+  gap: 2rem;
   position: relative;
   z-index: 1;
   align-items: center;
@@ -534,24 +534,13 @@ nav {
   z-index: 0;
 }
 
-#cadre .container,
-#cadre .split-image,
-#cadre .split-text {
-  position: relative;
-  z-index: 1;
-}
-
-#cadre .split-text {
-  flex: 0 0 42%;
-}
-
 #cadre .split-image {
   flex: 0 0 52%;
   min-width: 320px;
   max-width: 520px;
 }
 
-#cadre .cadre-photo {
+#cadre .split-photo {
   border-radius: 24px;
   box-shadow: 0 22px 45px rgba(0, 0, 0, 0.14);
 }
