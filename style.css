@@ -881,7 +881,7 @@ section p, section h2, section h3,
 
 .reservation-layout {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
   max-width: 900px;
@@ -897,15 +897,18 @@ section p, section h2, section h3,
 
 .reservation-btns {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  flex: 0 0 220px;
-  width: 100%;
-  align-items: stretch;
+  flex: 0 0 auto;
+  width: auto;
+  align-items: center;
 }
 
 .reservation-btns a {
-  width: 100%;
+  width: auto;
+  min-width: 180px;
   text-align: center;
 }
 
