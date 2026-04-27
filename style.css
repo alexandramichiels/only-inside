@@ -440,6 +440,10 @@ nav {
   padding-top: 60px;
 }
 
+#cadre .container-split {
+  gap: 1cm;
+}
+
 #cadre::before {
   content: '';
   position: absolute;
