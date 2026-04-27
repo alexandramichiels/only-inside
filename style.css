@@ -371,6 +371,13 @@ nav {
 #soin .split-text h2,
 #soin .split-text .sous-titre {
   color: #6E5A4E;
+  margin: 0 0 1.8rem 0;
+  padding: 0;
+}
+
+#soin .sous-titre {
+  font-size: 2.2rem;
+  letter-spacing: 0.05em;
 }
 
 #soin .split-text p,
