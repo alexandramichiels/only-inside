@@ -196,6 +196,7 @@ nav {
   margin-right: auto;
   padding-top: 1vh;
   text-align: left;
+  transform: translateY(-1cm);
 }
 
 .hero-title,
