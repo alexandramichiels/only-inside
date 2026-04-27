@@ -548,7 +548,10 @@ section p, section h2, section h3,
 }
 
 #espace .container-split {
-  gap: 1rem;
+  gap: 1cm;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 #espace .split-image {
