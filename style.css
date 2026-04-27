@@ -356,12 +356,26 @@ nav {
 #soin .container-split {
   position: relative;
   z-index: 1;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+#soin .split-text {
+  position: relative;
+  background: rgba(245, 239, 230, 0.96);
+  border-radius: 26px;
+  padding: 2.5rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+#soin .split-text h2,
+#soin .split-text .sous-titre {
+  color: #6E5A4E;
 }
 
 #soin .split-text p,
-#soin .split-text h2,
-#soin .sous-titre {
-  color: #4a3a32;
+#soin .split-text li {
+  color: #5c4839;
 }
 
 #soin .split-text:last-child {
