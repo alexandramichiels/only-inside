@@ -898,18 +898,16 @@ section p, section h2, section h3,
 
 .reservation-btns {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   gap: 1rem;
   flex: 0 0 auto;
   width: auto;
-  align-items: center;
+  align-items: stretch;
 }
 
 .reservation-btns a {
-  width: auto;
-  min-width: 180px;
+  width: 100%;
+  min-width: 0;
   text-align: center;
 }
 
