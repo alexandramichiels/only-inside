@@ -466,8 +466,12 @@ nav {
 }
 
 #reservation {
+  background-image: url('images/algues.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
   background-color: #D6C6B8;
-  background-image: none;
 }
 
 #faq {
