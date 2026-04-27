@@ -504,6 +504,15 @@ section p, section h2, section h3,
   max-height: 400px;
 }
 
+.eugenie-photo {
+  width: 350px;
+  min-width: 350px;
+  height: auto;
+  object-fit: cover;
+  object-position: center 30%;
+  flex-shrink: 0;
+}
+
 .split-text {
   flex: 1;
   padding: 1rem 0;
@@ -573,6 +582,18 @@ section p, section h2, section h3,
   line-height: 1;
 }
 
+.soin-bullets {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+  color: #6E5A4E;
+}
+
+.soin-bullets li {
+  margin-bottom: 0.5rem;
+}
+
 .tarif-note {
   font-size: 0.9rem;
   color: #8A8682;
@@ -583,22 +604,25 @@ section p, section h2, section h3,
 
 .citation {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-style: italic;
-  color: #8A8682;
-  border-left: 1px solid #d3927c;
-  padding-left: 1.5rem;
-  margin-top: 2.5rem;
-  max-width: 500px;
+  color: #4a3a32;
+  background: rgba(245, 239, 230, 0.92);
+  border: 1px solid rgba(211, 146, 124, 0.35);
+  padding: 2rem 2rem;
+  margin: 3rem auto 0;
+  max-width: 680px;
+  text-align: center;
+  line-height: 1.8;
 }
 
 .citation cite {
   display: block;
-  font-size: 0.9rem;
-  margin-top: 0.8rem;
-  color: #CBBFA3;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #8A8682;
   font-style: normal;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
 }
 
 .sous-titre {
@@ -612,8 +636,8 @@ section p, section h2, section h3,
 }
 
 .faq-item {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid #dec8b5;
 }
 
@@ -621,12 +645,40 @@ section p, section h2, section h3,
   border-bottom: none;
 }
 
-.faq-question {
+.faq-item details {
+  padding: 0.5rem 0;
+}
+
+.faq-item summary {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
   font-weight: 500;
   color: #d3927c;
-  margin-bottom: 0.8rem;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: ' +';
+  font-size: 1.1rem;
+  margin-left: 0.6rem;
+  color: #8A8682;
+}
+
+.faq-item details[open] summary::after {
+  content: ' −';
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #6E5A4E;
+  line-height: 1.9;
 }
 
 .eugenie-container {
