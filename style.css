@@ -318,7 +318,8 @@ nav {
 }
 
 #eugenie {
-  background-color: #EDE4D3;
+  background-color: #8A8682;
+  padding: 80px 4vw;
 }
 
 #tarifs {
@@ -553,8 +554,7 @@ section h2 {
 }
 
 section p, section h2, section h3,
-.container p, .narrow p, .split-text p,
-.eugenie-text p {
+.container p, .narrow p, .split-text p {
   text-align: left;
 }
 
@@ -775,25 +775,29 @@ section p, section h2, section h3,
   line-height: 1.9;
 }
 
-.eugenie-container {
+.eugenie-card {
+  background: #F5F1EC;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px;
+  border-radius: 4px;
   display: flex;
-  gap: 1cm;
+  gap: 4rem;
   align-items: center;
 }
 
-.eugenie-container .split-image {
+.eugenie-col-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  flex-shrink: 0;
 }
 
-.eugenie-text {
-  flex: 1.2;
+.eugenie-col-right {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
 }
 
 .eugenie-photo-caption {
@@ -806,7 +810,7 @@ section p, section h2, section h3,
   line-height: 1.7;
 }
 
-.eugenie-text p {
+.eugenie-col-right p {
   text-align: justify;
   margin-bottom: 0.6rem;
   line-height: 1.8;
@@ -1060,8 +1064,15 @@ footer {
     background-attachment: scroll;
   }
 
-  .eugenie-container {
+  #eugenie {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .eugenie-card {
     flex-direction: column;
+    border-radius: 0;
+    padding: 40px 24px;
   }
 
   .eugenie-photo {
@@ -1112,6 +1123,11 @@ footer {
 @media (min-width: 760px) {
   .section {
     padding: 120px 0;
+  }
+
+  #eugenie {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .prices {
