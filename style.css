@@ -394,6 +394,17 @@ section p, section h2, section h3,
 
 #espace .split-image {
   flex: 0 0 52%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+#espace .split-photo {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 24px;
 }
 
 #espace .split-text {
