@@ -386,18 +386,18 @@ section p, section h2, section h3,
 }
 
 #espace .container-split {
-  gap: 1cm;
+  gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
 }
 
-#espace .split-image,
-#espace .split-text {
-  flex: 0 0 46%;
+#espace .split-image {
+  flex: 0 0 52%;
 }
 
 #espace .split-text {
+  flex: 0 0 42%;
   padding-left: 2.5rem;
 }
 
