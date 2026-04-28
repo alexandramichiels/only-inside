@@ -307,6 +307,16 @@ nav {
   background-color: #F5EFE6;
 }
 
+#pour-qui .split-image {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+#pour-qui .split-photo {
+  display: block;
+  border-radius: 24px;
+}
+
 #eugenie {
   background-color: #EDE4D3;
 }
