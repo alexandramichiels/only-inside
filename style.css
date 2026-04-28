@@ -531,10 +531,16 @@ section p, section h2, section h3,
 }
 
 #pour-qui .container-split {
-  gap: 1rem;
+  gap: 3rem;
+}
+
+#pour-qui .split-text {
+  flex: 0 0 52%;
+  padding-left: 2.5rem;
 }
 
 #pour-qui .split-image {
+  flex: 0 0 42%;
   border-radius: 24px;
   overflow: hidden;
 }
