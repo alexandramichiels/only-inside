@@ -611,12 +611,12 @@ section p, section h2, section h3,
   justify-content: center;
 }
 
-#espace .split-image {
-  flex: 0 0 42%;
+#espace .split-image,
+#espace .split-text {
+  flex: 0 0 46%;
 }
 
 #espace .split-text {
-  flex: 0 0 52%;
   padding-left: 1rem;
 }
 
