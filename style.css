@@ -128,7 +128,6 @@ nav {
 
 .site-nav.scrolled {
   background: var(--light);
-  box-shadow: 0 4px 20px rgba(110, 90, 78, 0.08);
 }
 
 .nav-inner {
@@ -631,13 +630,15 @@ section p, section h2, section h3,
 .tarif-bloc-a {
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 2.5rem;
   padding: 1rem 0;
+  text-align: center;
 }
 
 .tarif-duree {
   font-family: 'Cormorant Garamond', serif;
-  font-size: calc(5.5rem + 18px);
+  font-size: calc(5.5rem + 28px);
   font-weight: 300;
   letter-spacing: 0.15em;
   color: #8A8682;
@@ -810,7 +811,7 @@ section p, section h2, section h3,
 
 .reservation-layout {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
   max-width: 900px;
@@ -935,7 +936,7 @@ footer {
   grid-template-columns: 1.5fr 1fr 1fr 1.4fr;
   gap: 2.5rem;
   margin-bottom: 2rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-col-right .footer-title {
