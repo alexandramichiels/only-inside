@@ -162,7 +162,7 @@ nav {
 }
 
 .nav-links a {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -273,7 +273,7 @@ nav {
 }
 
 .tagline {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: calc(3.6rem + 2px);
   font-weight: 300;
   color: rgba(255,255,255,0.9);
@@ -561,11 +561,13 @@ section p, section h2, section h3,
 
 .eugenie-container {
   display: flex;
-  gap: 1cm;
+  gap: 3rem;
+  max-width: 1200px;
   align-items: center;
 }
 
 .eugenie-container .split-image {
+  flex: 0 0 52%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -573,11 +575,11 @@ section p, section h2, section h3,
 }
 
 .eugenie-text {
-  flex: 1.2;
+  flex: 0 0 42%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
+  padding: 0 0 0 2.5rem;
 }
 
 .eugenie-text p {
@@ -630,15 +632,13 @@ section p, section h2, section h3,
 .tarif-bloc-a {
   display: flex;
   align-items: baseline;
-  justify-content: center;
   gap: 2.5rem;
   padding: 1rem 0;
-  text-align: center;
 }
 
 .tarif-duree {
   font-family: 'Cormorant Garamond', serif;
-  font-size: calc(5.5rem + 28px);
+  font-size: calc(5.5rem + 38px);
   font-weight: 300;
   letter-spacing: 0.15em;
   color: #8A8682;
@@ -973,7 +973,7 @@ footer {
 }
 
 .footer-tagline {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
   letter-spacing: 0.05em;
   text-transform: none;
