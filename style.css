@@ -265,7 +265,7 @@ nav {
   font-family: 'Cormorant Garamond', serif;
   font-size: 5rem;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #d3927c;
   text-shadow: 0 2px 25px rgba(0,0,0,0.25);
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
@@ -276,7 +276,7 @@ nav {
   font-family: 'Montserrat', sans-serif;
   font-size: calc(3.6rem + 2px);
   font-weight: 300;
-  color: rgba(255,255,255,0.9);
+  color: #d3927c;
   text-shadow: 0 1px 15px rgba(0,0,0,0.2);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -286,7 +286,7 @@ nav {
 
 .hero-signature {
   font-family: 'Cormorant Garamond', serif;
-  color: #FFFFFF;
+  color: #6E5A4E;
   font-weight: 500;
   font-size: calc(1.5rem + 2px);
   font-style: italic;
@@ -302,13 +302,14 @@ nav {
   justify-content: center;
   text-align: center;
   padding: 0.8rem 2rem;
-  border-color: rgba(255,255,255,0.9);
-  color: #FFFFFF;
+  background-color: rgba(245, 239, 230, 0.4);
+  border-color: #8FA89A;
+  color: #d3927c;
 }
 
 .hero .btn:hover {
-  background-color: rgba(255,255,255,0.2);
-  color: #FFFFFF;
+  background-color: rgba(245, 239, 230, 0.7);
+  color: #d3927c;
 }
 
 /* ---- Button ---- */
@@ -563,47 +564,21 @@ section p, section h2, section h3,
   display: flex;
   gap: 3rem;
   max-width: 1200px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .eugenie-container .split-image {
-  flex: 0 0 52%;
+  flex: 0 0 48%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .eugenie-patchwork {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1.2rem;
+  position: relative;
   width: 100%;
-}
-
-.eugenie-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 0 0 2.5rem;
-}
-
-.eugenie-text p {
-  text-align: left;
-  margin-bottom: 0.6rem;
-  line-height: 1.8;
-}
-
-.eugenie-photo-caption {
-  display: block;
-  width: min(100%, 300px);
-  margin: 0.8rem 0 0;
-  font-size: 0.95rem;
-  color: #6E5A4E;
-  text-align: center;
-  line-height: 1.7;
+  height: 460px;
 }
 
 .eugenie-photo {
@@ -611,21 +586,74 @@ section p, section h2, section h3,
   height: 300px;
   object-fit: cover;
   object-position: center 30%;
-  flex-shrink: 0;
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.85);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
-  align-self: flex-end;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .eugenie-algues {
-  width: 260px;
-  height: 190px;
+  width: 220px;
+  height: 270px;
   object-fit: cover;
   object-position: center;
-  border-radius: 20px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.13);
-  align-self: flex-start;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.13);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.eugenie-photo-caption {
+  display: block;
+  width: min(100%, 300px);
+  margin: 1.2rem 0 0;
+  font-size: 0.85rem;
+  color: #6E5A4E;
+  text-align: right;
+  font-style: italic;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+.eugenie-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 0 3rem;
+  border-left: 1px solid rgba(211, 146, 124, 0.3);
+}
+
+.eugenie-pretitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #d3927c;
+  margin-bottom: 0.9rem;
+  display: block;
+}
+
+.eugenie-text h2 {
+  margin-bottom: 0;
+}
+
+.eugenie-text h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: #d3927c;
+  margin: 1.1rem 0 1.8rem;
+}
+
+.eugenie-text p {
+  text-align: left;
+  margin-bottom: 0.7rem;
+  line-height: 1.85;
 }
 
 /* ---- #tarifs ---- */
@@ -1110,12 +1138,43 @@ footer {
     flex-direction: column;
   }
 
-  .eugenie-photo {
-    width: min(100%, 350px);
-    height: 350px;
+  .eugenie-container .split-image {
+    flex: none;
+    width: 100%;
+    align-items: center;
+  }
+
+  .eugenie-patchwork {
+    height: 320px;
+    width: 100%;
+    max-width: 420px;
     margin: 0 auto;
-    border-radius: 50%;
-    object-position: center 30%;
+  }
+
+  .eugenie-photo {
+    width: 230px;
+    height: 230px;
+    top: 0;
+    right: 0;
+  }
+
+  .eugenie-algues {
+    width: 170px;
+    height: 210px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .eugenie-photo-caption {
+    text-align: center;
+    margin: 1rem auto 0;
+  }
+
+  .eugenie-text {
+    padding: 0;
+    border-left: none;
+    border-top: 1px solid rgba(211, 146, 124, 0.3);
+    padding-top: 2rem;
   }
 
   .container-split {
