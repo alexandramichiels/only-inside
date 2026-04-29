@@ -570,12 +570,12 @@ section p, section h2, section h3,
   flex: 0 0 52%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .eugenie-text {
-  flex: 0 0 42%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -583,7 +583,7 @@ section p, section h2, section h3,
 }
 
 .eugenie-text p {
-  text-align: justify;
+  text-align: left;
   margin-bottom: 0.6rem;
   line-height: 1.8;
 }
@@ -591,7 +591,7 @@ section p, section h2, section h3,
 .eugenie-photo-caption {
   display: block;
   width: min(100%, 350px);
-  margin: 1rem auto 0;
+  margin: 1rem 0 0;
   font-size: 0.95rem;
   color: #6E5A4E;
   text-align: center;
@@ -812,10 +812,8 @@ section p, section h2, section h3,
 .reservation-layout {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
   flex-wrap: wrap;
   text-align: left;
 }
