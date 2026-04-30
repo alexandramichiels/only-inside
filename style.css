@@ -1145,7 +1145,10 @@ footer {
   font-weight: 300;
   font-style: italic;
   color: #d3927c;
+  width: 100%;
+  max-width: none;
   text-align: center;
+  white-space: nowrap;
   margin: 0;
   padding-top: 6.5rem;
   padding-bottom: 1.8rem;
