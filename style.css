@@ -268,7 +268,7 @@ nav {
 
 .hero-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: calc(5rem - 4px);
+  font-size: calc(5rem - 9px);
   font-weight: 300;
   color: #d3927c;
   text-shadow: 0 2px 25px rgba(0,0,0,0.25);
@@ -499,23 +499,12 @@ section p, section h2, section h3,
 
 .soin-bande-defilante {
   position: relative;
-  height: 230px;
+  height: 500px;
   background-image: url('images/arc.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow: hidden;
-}
-
-.soin-bande-defilante::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 90px;
-  background: linear-gradient(to bottom, rgba(245, 239, 230, 0), #F5EFE6);
-  pointer-events: none;
 }
 
 /* ---- #pour-qui ---- */
@@ -667,21 +656,11 @@ section p, section h2, section h3,
 }
 
 .tarifs-wrap {
-  max-width: 980px;
-}
-
-.tarifs-label {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 0.9rem;
+  max-width: 920px;
 }
 
 #tarifs h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .tarif-ligne {
@@ -694,7 +673,7 @@ section p, section h2, section h3,
 .tarif-card {
   border: 1px solid #ece2d4;
   background: #faf7f2;
-  padding: 1.7rem 2rem 2rem;
+  padding: 1.9rem 2.15rem 2.15rem;
 }
 
 .tarif-top {
@@ -706,14 +685,14 @@ section p, section h2, section h3,
 
 .tarif-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: 2.15rem;
   color: #3D2E22;
   margin: 0;
 }
 
 .tarif-subtitle {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-style: italic;
   color: #b59d82;
   margin: 0.2rem 0 0;
@@ -721,7 +700,7 @@ section p, section h2, section h3,
 
 .tarif-price {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 3.1rem;
+  font-size: 3rem;
   font-weight: 400;
   color: #8c755f;
   line-height: 1;
@@ -740,18 +719,7 @@ section p, section h2, section h3,
 }
 
 .tarifs-btn {
-  margin-top: 1.8rem;
-  background: #282317;
-  border-color: #282317;
-  color: #F5EFE6;
-  letter-spacing: 0.18em;
-  padding: 0.85rem 1.6rem;
-}
-
-.tarifs-btn:hover {
-  background: #1f1b12;
-  border-color: #1f1b12;
-  color: #F5EFE6;
+  margin-top: 2rem;
 }
 
 .prices {
@@ -1009,8 +977,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
-  text-align: center;
+  align-self: flex-start;
+  text-align: left;
   margin-top: 1.8rem;
 }
 
@@ -1065,6 +1033,8 @@ footer {
   opacity: 0.85;
   margin-top: 0.1rem;
   line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .footer-title {
@@ -1375,6 +1345,7 @@ footer {
 .espace-text {
   flex: 0 0 48%;
   padding: 0;
+  margin-left: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
