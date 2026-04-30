@@ -263,12 +263,12 @@ nav {
 
 .hero-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 5rem;
+  font-size: calc(5rem - 2px);
   font-weight: 300;
   color: #d3927c;
   text-shadow: 0 2px 25px rgba(0,0,0,0.25);
   letter-spacing: 0.08em;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.2rem;
   text-align: left;
 }
 
@@ -286,13 +286,14 @@ nav {
 
 .hero-signature {
   font-family: 'Cormorant Garamond', serif;
-  color: #6E5A4E;
-  font-weight: 500;
-  font-size: calc(1.5rem + 2px);
+  color: #d3927c;
+  font-weight: 300;
+  font-size: calc(5rem - 2px);
   font-style: italic;
   text-shadow: none;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.05;
   text-align: left;
 }
 
@@ -305,7 +306,8 @@ nav {
   background-color: rgba(245, 239, 230, 0.5);
   border-color: #8FA89A;
   color: #d3927c;
-  margin-top: 0;
+  margin-top: 1cm;
+  margin-left: 1cm;
 }
 
 .hero .btn:hover {
@@ -1308,6 +1310,7 @@ footer {
 .espace-image {
   flex: 0 0 50%;
   overflow: hidden;
+  padding: 2.5rem 0;
 }
 
 .espace-photo {
