@@ -314,8 +314,9 @@ nav {
   color: #d3927c;
   margin: 0;
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero .btn:hover {
@@ -1340,10 +1341,15 @@ footer {
 }
 
 .quote {
-  width: 100%;
-  text-align: center;
   font-size: 32px;
-  margin: 0 auto;
+  text-align: center;
+}
+
+.band {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .espace-photo {
