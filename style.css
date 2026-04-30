@@ -725,9 +725,17 @@ section p, section h2, section h3,
 
 #aussi .aussi-layout {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 2.2rem 2.6rem;
-  align-items: start;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.aussi-panel {
+  background: #fffaf3;
+  border: 1px solid rgba(211, 146, 124, 0.2);
+  border-radius: 26px;
+  padding: 2rem 2.1rem;
+  box-shadow: 0 14px 35px rgba(117, 89, 69, 0.06);
 }
 
 .aussi-intro h2 {
@@ -751,15 +759,43 @@ section p, section h2, section h3,
 }
 
 .aussi-meta {
-  grid-column: 1 / -1;
-  background: #fffaf3;
-  border: 1px solid rgba(211, 146, 124, 0.15);
-  border-radius: 22px;
-  padding: 1.4rem 1.5rem 1.5rem;
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(211, 146, 124, 0.2);
 }
 
-.aussi-meta .espace-btn {
-  margin-top: 0.8rem;
+.aussi-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aussi-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  max-height: 540px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 26px;
+}
+
+.aussi-tags {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.aussi-tags span {
+  background: #fffaf3;
+  border: 1px solid rgba(211, 146, 124, 0.28);
+  color: #7b6051;
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 
@@ -937,6 +973,14 @@ footer {
   #aussi .aussi-layout {
     grid-template-columns: 1fr;
     gap: 1.4rem;
+  }
+
+  .aussi-panel {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .aussi-photo {
+    min-height: 300px;
   }
 }
 
