@@ -314,8 +314,8 @@ nav {
   color: #d3927c;
   margin: 0;
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 30px;
+  bottom: 30px;
 }
 
 .hero .btn:hover {
@@ -1369,21 +1369,49 @@ footer {
   color: #F5EFE6;
 }
 
-.espace-bande {
+.espace-bande-photo {
   background-color: #F5EFE6;
-  padding: 4rem 0;
-  border-top: 1px solid rgba(110, 90, 78, 0.15);
+  padding: 5rem 0;
 }
 
-.espace-bande-texte {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+.espace-bande-layout {
+  gap: 4rem;
+  align-items: center;
+  max-width: 1250px;
+}
+
+.espace-bande-text {
+  flex: 0 0 46%;
+  padding: 0;
+}
+
+.espace-bande-text h2 {
+  font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 400;
-  color: #6E5A4E;
-  text-align: center;
-  line-height: 1.9;
-  max-width: 700px;
-  margin: 0 auto;
+  color: #3D2E22;
+  line-height: 1.05;
+  margin-bottom: 1.6rem;
+}
+
+.espace-bande-text p {
+  color: #8A8682;
+  font-size: 1.05rem;
+  line-height: 2;
+  max-width: 50ch;
+  margin-bottom: 0.9rem;
+}
+
+.espace-bande-image {
+  flex: 0 0 46%;
+}
+
+.espace-bande-photo-img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 24px;
 }
 
 @media (max-width: 768px) {
