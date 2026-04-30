@@ -1,14 +1,3 @@
-.quote {
-  font-size: 48px;
-  white-space: nowrap;
-}
-
-.band {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 :root {
   --bg: #dec8b5;
   --text: #6E5A4E;
@@ -262,19 +251,10 @@ nav {
 
 .hero-title,
 .tagline,
-.hero-signature,
 .hero .btn {
   margin-left: 0;
   padding-left: 0;
   text-align: left;
-}
-
-.brand {
-  margin-bottom: 1rem;
-  color: var(--gray);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 0.75rem;
 }
 
 .hero-title {
@@ -298,19 +278,6 @@ nav {
   letter-spacing: 0.12em;
   text-transform: none;
   margin-bottom: 1.5rem;
-  text-align: left;
-}
-
-.hero-signature {
-  font-family: 'Cormorant Garamond', serif;
-  color: #d3927c;
-  font-weight: 300;
-  font-size: calc(5rem - 2px);
-  font-style: italic;
-  text-shadow: none;
-  margin-top: 0;
-  margin-bottom: 0.8rem;
-  line-height: 1.05;
   text-align: left;
 }
 
@@ -400,10 +367,6 @@ section p, section h2, section h3,
 #soin {
   position: relative;
   background: #fffdf9;
-}
-
-#soin::before {
-  content: none;
 }
 
 #soin .soin-content {
@@ -542,11 +505,6 @@ section p, section h2, section h3,
   background-color: #F5EFE6;
 }
 
-#pour-qui > .container {
-  position: relative;
-  z-index: 1;
-}
-
 #pour-qui .container-split {
   gap: 3rem;
 }
@@ -589,27 +547,6 @@ section p, section h2, section h3,
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.eugenie-patchwork {
-  flex: 1;
-  min-height: 480px;
-  position: relative;
-  margin-left: -2cm;
-  margin-right: 150px;
-  border-radius: 18px;
-  overflow: hidden;
-}
-
-.eugenie-algues {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 18px;
-  z-index: 0;
 }
 
 .eugenie-photo {
@@ -773,29 +710,12 @@ section p, section h2, section h3,
   font-weight: 500;
 }
 
-/* ---- #aussi + #cadre ---- */
+/* ---- #aussi ---- */
 
-#aussi,
-#cadre {
+#aussi {
   position: relative;
   margin: 0;
   padding: 4rem 0 5rem;
-}
-
-#cadre::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(250, 244, 238, 0.58);
-  z-index: 0;
-}
-
-#cadre .container-split {
-  position: relative;
-  z-index: 1;
 }
 
 #aussi {
@@ -830,32 +750,6 @@ section p, section h2, section h3,
   margin-bottom: 0.9rem;
 }
 
-.aussi-cards {
-  display: grid;
-  gap: 0.9rem;
-}
-
-.aussi-card {
-  background: #fffaf3;
-  border: 1px solid rgba(211, 146, 124, 0.22);
-  border-radius: 18px;
-  padding: 1.15rem 1.25rem;
-}
-
-.aussi-card h3 {
-  margin: 0 0 0.4rem;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.6rem;
-  color: #5c4537;
-}
-
-.aussi-card p {
-  margin: 0;
-  line-height: 1.8;
-  color: #74685f;
-  font-size: 0.98rem;
-}
-
 .aussi-meta {
   grid-column: 1 / -1;
   background: #fffaf3;
@@ -868,123 +762,6 @@ section p, section h2, section h3,
   margin-top: 0.8rem;
 }
 
-.section-card {
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(145, 112, 93, 0.18);
-  border-radius: 24px;
-  padding: 2.5rem;
-  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.08);
-}
-
-.section-card h2 {
-  margin-bottom: 1.4rem;
-  color: #5f4739;
-}
-
-.section-card p {
-  color: #4b382d;
-}
-
-#section-aussi-columns {
-  column-count: 2;
-  column-gap: 3rem;
-}
-
-#section-aussi-columns p {
-  margin-bottom: 1rem;
-}
-
-#cadre .container-split {
-  gap: 2.5rem;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-#cadre .split-text {
-  flex: 0 0 42%;
-}
-
-#cadre .split-image {
-  flex: 0 0 52%;
-  min-width: 320px;
-  max-width: 520px;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-#cadre .split-photo {
-  border-radius: 24px;
-}
-
-.cadre-photo {
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
-}
-
-/* ---- #ou-me-trouver ---- */
-
-#ou-me-trouver {
-  background-image: url('images/couché.jpeg');
-  background-size: cover;
-  background-position: center 30%;
-  background-attachment: fixed;
-  position: relative;
-}
-
-#ou-me-trouver::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(245, 239, 230, 0.78);
-  z-index: 0;
-}
-
-#ou-me-trouver .container {
-  position: relative;
-  z-index: 1;
-}
-
-
-.reservation-layout {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-.reservation-text {
-  flex: 1 1 420px;
-  max-width: 520px;
-  padding-left: 2.5rem;
-}
-
-.reservation-btns {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex: 0 0 auto;
-  width: auto;
-  align-items: stretch;
-}
-
-.reservation-btns a {
-  width: 100%;
-  min-width: 0;
-  text-align: center;
-}
-
-.reservation-btns .btn {
-  min-width: 160px;
-  text-align: center;
-}
 
 /* ---- #faq ---- */
 
@@ -1038,25 +815,6 @@ section p, section h2, section h3,
   line-height: 1.9;
 }
 
-/* ---- Contact ---- */
-
-.contact-links {
-  margin-top: 1.4rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.contact-links a {
-  margin-top: 0;
-}
-
-.contact-links a:hover,
-.contact-links a:focus-visible {
-  background: var(--accent);
-  color: var(--light);
-}
-
 /* ---- Footer ---- */
 
 footer {
@@ -1097,13 +855,6 @@ footer {
   font-size: 0.88rem;
   opacity: 0.75;
   line-height: 1.6;
-}
-
-.footer-col-center {
-  text-align: center;
-  border-left: 1px solid rgba(245,239,230,0.3);
-  border-right: 1px solid rgba(245,239,230,0.3);
-  padding: 0 2rem;
 }
 
 .footer-logo {
@@ -1183,36 +934,9 @@ footer {
 }
 
 @media (max-width: 900px) {
-  #section-aussi-columns {
-    column-count: 1;
-  }
-
   #aussi .aussi-layout {
     grid-template-columns: 1fr;
     gap: 1.4rem;
-  }
-
-  #aussi .container,
-  #cadre .container-split {
-    flex-direction: column;
-  }
-
-  #cadre .split-text,
-  #cadre .split-image {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .reservation-layout {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .reservation-text,
-  .reservation-btns {
-    max-width: 100%;
-    width: 100%;
   }
 }
 
@@ -1245,8 +969,7 @@ footer {
   #espace,
   #soin,
   #pour-qui,
-  #aussi,
-  #ou-me-trouver {
+  #aussi {
     background-attachment: scroll;
   }
 
@@ -1257,9 +980,6 @@ footer {
 
   .eugenie-container {
     flex-direction: column;
-  }
-
-  .eugenie-container {
     align-items: flex-start;
   }
 
@@ -1269,22 +989,12 @@ footer {
     min-height: 340px;
   }
 
-  .eugenie-patchwork {
-    min-height: 340px;
-    margin-left: 0;
-    margin-right: 110px;
-  }
-
   .eugenie-photo {
     width: 220px;
     height: 220px;
-    right: 0;
   }
 
   .eugenie-photo-caption {
-    bottom: 0.8rem;
-    left: 1rem;
-    right: 130px;
     font-size: 0.78rem;
   }
 
@@ -1304,15 +1014,6 @@ footer {
     flex-direction: column;
   }
 
-  .reservation-layout {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .reservation-btns {
-    flex-direction: row;
-  }
-
   .split-photo {
     max-height: 280px;
     width: 100%;
@@ -1323,22 +1024,11 @@ footer {
     gap: 2rem;
   }
 
-  .footer-col-center {
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid rgba(245,239,230,0.2);
-    border-bottom: 1px solid rgba(245,239,230,0.2);
-    padding: 2rem 0;
-  }
 }
 
 @media (min-width: 760px) {
   .section {
     padding: 120px 0;
-  }
-
-  .prices {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1383,33 +1073,6 @@ footer {
   background: #6E5A4E;
   opacity: 0.45;
   margin: 0 auto 2.6rem;
-}
-
-.btn-ghost {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-  text-decoration: none;
-  border: 1px solid rgba(62,46,34,0.45);
-  color: #3D2E22;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.1em;
-  transition: all 0.2s;
-  background: transparent;
-}
-.btn-ghost:hover {
-  border-color: #3D2E22;
-  background: rgba(62,46,34,0.08);
-}
-.btn-whatsapp {
-  background: #25D366 !important;
-  border-color: #25D366 !important;
-  color: white !important;
-}
-.btn-whatsapp:hover {
-  background: #1ebe5a !important;
-  border-color: #1ebe5a !important;
 }
 
 .resa-btn {
@@ -1469,15 +1132,6 @@ footer {
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 1.8rem;
-}
-
-.espace-titre {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.2rem, 3.5vw, 3.4rem);
-  font-weight: 400;
-  color: #d3927c;
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
 }
 
 .espace-separateur {
