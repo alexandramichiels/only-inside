@@ -1296,12 +1296,14 @@ footer {
   color: #3D2E22;
   font-size: clamp(1.8rem, 4vw, 3rem);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 #reservation p {
   color: #5C4A3A;
   margin: 0 auto 0.8rem;
-  max-width: 48ch;
+  max-width: 72ch;
   font-size: 1.05rem;
+  text-align: center;
 }
 .contact-btns {
   display: flex;
@@ -1335,4 +1337,16 @@ footer {
 .btn-whatsapp:hover {
   background: #1ebe5a !important;
   border-color: #1ebe5a !important;
+}
+
+.resa-btn {
+  background-color: rgba(245, 239, 230, 0.5);
+  border-color: #8FA89A;
+  color: #d3927c;
+  margin-top: 0;
+}
+
+.resa-btn:hover {
+  background-color: rgba(245, 239, 230, 1);
+  color: #d3927c;
 }
