@@ -237,11 +237,11 @@ nav {
   backdrop-filter: none;
   padding: 0;
   max-width: 600px;
-  margin-left: 8vw;
+  margin-left: calc(8vw - 1cm);
   margin-right: auto;
   padding-top: 1vh;
   text-align: left;
-  transform: translateY(-1cm);
+  transform: translateY(0);
 }
 
 .hero-title,
@@ -847,17 +847,6 @@ section p, section h2, section h3,
   z-index: 1;
 }
 
-/* ---- #reservation ---- */
-
-#reservation {
-  background-color: #EDE4D3;
-  background-image: none;
-}
-
-#reservation > .container {
-  position: relative;
-  z-index: 1;
-}
 
 .reservation-layout {
   display: flex;
@@ -1226,18 +1215,61 @@ footer {
   }
 }
 
-/* ---- #reservation (nouvelle version) ---- */
-
-#reservation { background: #CBBFA3; text-align: center; padding: 80px 0; }
-#reservation h2 { color: #3D2E22; }
-#reservation p { color: #5C4A3A; margin: 0 auto 0.8rem; max-width: 48ch; font-size: 1.05rem; }
-
-.section-label { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: #6E5A4E; margin-bottom: 1.2rem; }
-
-.contact-btns { display: flex; gap: 1.2rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap; }
-
-.btn-ghost { display: inline-flex; align-items: center; gap: 0.7rem; text-decoration: none; border: 1px solid rgba(62,46,34,0.35); color: #3D2E22; padding: 1rem 2rem; font-size: 0.9rem; letter-spacing: 0.1em; transition: all 0.2s; }
-.btn-ghost:hover { border-color: #3D2E22; background: rgba(62,46,34,0.08); }
-
-.btn-whatsapp { background: #25D366; border-color: #25D366; color: white; }
-.btn-whatsapp:hover { background: #1ebe5a; border-color: #1ebe5a; color: white; }
+#reservation {
+  background: #CBBFA3 !important;
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+#reservation .section-label {
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #6E5A4E;
+  margin-bottom: 1.2rem;
+}
+#reservation h2 {
+  color: #3D2E22;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+#reservation p {
+  color: #5C4A3A;
+  margin: 0 auto 0.8rem;
+  max-width: 48ch;
+  font-size: 1.05rem;
+}
+.contact-btns {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  border: 1px solid rgba(62,46,34,0.45);
+  color: #3D2E22;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  transition: all 0.2s;
+  background: transparent;
+}
+.btn-ghost:hover {
+  border-color: #3D2E22;
+  background: rgba(62,46,34,0.08);
+}
+.btn-whatsapp {
+  background: #25D366 !important;
+  border-color: #25D366 !important;
+  color: white !important;
+}
+.btn-whatsapp:hover {
+  background: #1ebe5a !important;
+  border-color: #1ebe5a !important;
+}
