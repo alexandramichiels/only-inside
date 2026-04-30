@@ -309,13 +309,13 @@ nav {
   justify-content: center;
   text-align: center;
   padding: 0.8rem 2rem;
-  background-color: rgba(245, 239, 230, 0.5);
+  background-color: rgba(245, 239, 230, 0.7);
   border-color: #8FA89A;
   color: #d3927c;
   margin: 0;
   position: absolute;
   right: calc(8vw + 50px);
-  top: calc(50% + 180px);
+  top: calc(50% + 230px);
   transform: translateY(-50%);
 }
 
@@ -497,35 +497,24 @@ section p, section h2, section h3,
 }
 
 .soin-bande-defilante {
-  background: #F5EFE6;
+  position: relative;
+  height: 230px;
+  background-image: url('images/arc.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   overflow: hidden;
-  padding: 0.8rem 0;
 }
 
-.soin-bande-track {
-  display: flex;
-  width: max-content;
-  animation: soin-scroll 36s linear infinite;
-}
-
-.soin-bande-image {
-  width: 42vw;
-  min-width: 380px;
-  max-width: 640px;
-  height: 180px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 24px;
-  margin-right: 1rem;
-}
-
-@keyframes soin-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-50% - 0.5rem));
-  }
+.soin-bande-defilante::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  background: linear-gradient(to bottom, rgba(245, 239, 230, 0), #F5EFE6);
+  pointer-events: none;
 }
 
 /* ---- #pour-qui ---- */
@@ -1147,6 +1136,11 @@ footer {
     background-attachment: scroll;
   }
 
+  .soin-bande-defilante {
+    background-attachment: scroll;
+    height: 190px;
+  }
+
   .eugenie-container {
     flex-direction: column;
   }
@@ -1312,13 +1306,26 @@ footer {
 
 #espace {
   background-color: #F5EFE6;
-  padding: 0;
+  padding: 0 0 1rem;
+}
+
+.espace-top-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: calc(5rem - 4px);
+  font-weight: 300;
+  font-style: italic;
+  color: #d3927c;
+  text-align: center;
+  margin: 0;
+  padding-top: 6.5rem;
+  padding-bottom: 1.8rem;
+  line-height: 1.05;
 }
 
 .espace-split {
   gap: 4rem;
   align-items: center;
-  padding: 5rem 6vw;
+  padding: 6rem 6vw 5rem;
   max-width: 1400px;
 }
 
