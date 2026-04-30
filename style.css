@@ -268,7 +268,7 @@ nav {
 
 .hero-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: calc(5rem - 2px);
+  font-size: calc(5rem - 4px);
   font-weight: 300;
   color: #d3927c;
   text-shadow: 0 2px 25px rgba(0,0,0,0.25);
@@ -314,8 +314,8 @@ nav {
   color: #d3927c;
   margin: 0;
   position: absolute;
-  right: 8vw;
-  top: calc(50% + 150px);
+  right: calc(8vw + 50px);
+  top: calc(50% + 180px);
   transform: translateY(-50%);
 }
 
@@ -1323,14 +1323,14 @@ footer {
 }
 
 .espace-photo {
-  width: calc(100% - 1cm);
+  width: calc(100% - 0.4cm);
   height: 560px;
   min-height: 0;
   object-fit: cover;
   object-position: center;
   display: block;
   border-radius: 24px;
-  margin-left: -1cm;
+  margin-right: 0.4cm;
 }
 
 .espace-btn {
@@ -1338,8 +1338,9 @@ footer {
   align-self: flex-start;
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #6E5A4E;
-  color: #6E5A4E;
+  border: 1px solid #25D366;
+  color: #ffffff;
+  background: #25D366;
   padding: 0.9rem 2rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.72rem;
@@ -1349,8 +1350,13 @@ footer {
 }
 
 .espace-btn:hover {
-  background: #6E5A4E;
-  color: #F5EFE6;
+  background: #1ebe5a;
+  border-color: #1ebe5a;
+  color: #ffffff;
+}
+
+main img {
+  border-radius: 24px;
 }
 
 .espace-bande-photo {
