@@ -242,7 +242,7 @@ nav {
   backdrop-filter: none;
   padding: 0;
   max-width: 600px;
-  margin-left: calc(8vw - 1cm);
+  margin-left: calc(8vw - 1.5cm);
   margin-right: auto;
   padding-top: 1vh;
   text-align: left;
@@ -1337,6 +1337,13 @@ footer {
   line-height: 1.05;
   margin: 0 0 1.5rem;
   text-align: center;
+}
+
+.quote {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  margin: 0 auto;
 }
 
 .espace-photo {
