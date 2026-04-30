@@ -268,7 +268,7 @@ nav {
   color: #d3927c;
   text-shadow: 0 2px 25px rgba(0,0,0,0.25);
   letter-spacing: 0.08em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: left;
 }
 
@@ -280,7 +280,7 @@ nav {
   text-shadow: 0 1px 15px rgba(0,0,0,0.2);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   text-align: left;
 }
 
@@ -291,8 +291,8 @@ nav {
   font-size: calc(1.5rem + 2px);
   font-style: italic;
   text-shadow: none;
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
   text-align: left;
 }
 
@@ -305,6 +305,7 @@ nav {
   background-color: rgba(245, 239, 230, 0.5);
   border-color: #8FA89A;
   color: #d3927c;
+  margin-top: 0;
 }
 
 .hero .btn:hover {
@@ -1344,6 +1345,8 @@ footer {
   border-color: #8FA89A;
   color: #d3927c;
   margin-top: 0;
+  min-width: 160px;
+  justify-content: center;
 }
 
 .resa-btn:hover {
