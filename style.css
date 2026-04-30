@@ -372,109 +372,6 @@ section p, section h2, section h3,
 
 /* ---- #espace ---- */
 
-#espace {
-  background-color: #F5EFE6;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.espace-split {
-  gap: 0;
-  align-items: stretch;
-  padding: 0;
-  max-width: 100%;
-}
-
-.espace-text {
-  flex: 0 0 50%;
-  padding: 7rem 5vw 7rem 8vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.espace-label {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #8A8682;
-  margin-bottom: 2rem;
-}
-
-.espace-titre {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.2rem, 4vw, 3.6rem);
-  font-weight: 400;
-  color: #3D2E22;
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
-}
-
-.espace-separateur {
-  width: 2.5rem;
-  height: 1px;
-  background: #6E5A4E;
-  margin-bottom: 2rem;
-}
-
-.espace-image {
-  flex: 0 0 50%;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.espace-photo {
-  width: 100%;
-  height: 100%;
-  min-height: 520px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 0;
-  max-height: none;
-  display: block;
-}
-
-.espace-btn {
-  margin-top: 3rem;
-  align-self: flex-start;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2.2rem;
-  background-color: rgba(245, 239, 230, 0.5);
-  border: 1px solid #8FA89A;
-  color: #d3927c;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.espace-btn:hover {
-  background-color: rgba(245, 239, 230, 1);
-  color: #d3927c;
-}
-
-@media (max-width: 768px) {
-  .espace-split {
-    flex-direction: column;
-  }
-  .espace-text {
-    padding: 4rem 6vw;
-    flex: none;
-  }
-  .espace-image {
-    flex: none;
-    width: 100%;
-  }
-  .espace-photo {
-    min-height: 320px;
-  }
-}
 
 /* ---- #soin ---- */
 
@@ -1352,4 +1249,126 @@ footer {
 .resa-btn:hover {
   background-color: rgba(245, 239, 230, 1);
   color: #d3927c;
+}
+
+#espace {
+  background-color: #F5EFE6;
+  padding: 0;
+}
+
+.espace-split {
+  gap: 0;
+  align-items: stretch;
+  padding: 0;
+  max-width: 100%;
+}
+
+.espace-text {
+  flex: 0 0 50%;
+  padding: 6rem 4vw 6rem 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.espace-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #8A8682;
+  margin-bottom: 1.8rem;
+}
+
+.espace-titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+  font-weight: 400;
+  color: #d3927c;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.espace-separateur {
+  width: 2rem;
+  height: 1px;
+  background: #6E5A4E;
+  margin-bottom: 2rem;
+}
+
+.espace-text p {
+  font-size: 1rem;
+  color: #5C4A3A;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+  max-width: 48ch;
+}
+
+.espace-image {
+  flex: 0 0 50%;
+  overflow: hidden;
+}
+
+.espace-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.espace-btn {
+  margin-top: 2.5rem;
+  align-self: flex-start;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #6E5A4E;
+  color: #6E5A4E;
+  padding: 0.9rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+}
+
+.espace-btn:hover {
+  background: #6E5A4E;
+  color: #F5EFE6;
+}
+
+.espace-bande {
+  background-color: #F5EFE6;
+  padding: 4rem 0;
+  border-top: 1px solid rgba(110, 90, 78, 0.15);
+}
+
+.espace-bande-texte {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 400;
+  color: #6E5A4E;
+  text-align: center;
+  line-height: 1.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .espace-split {
+    flex-direction: column;
+  }
+  .espace-text {
+    flex: none;
+    padding: 4rem 6vw;
+  }
+  .espace-image {
+    flex: none;
+    width: 100%;
+  }
+  .espace-photo {
+    min-height: 320px;
+  }
 }
