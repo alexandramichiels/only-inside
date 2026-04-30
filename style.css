@@ -451,7 +451,7 @@ section p, section h2, section h3,
 
 .citation {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: 1.55rem;
   font-style: italic;
   color: #9A7E60;
   background: #faf7f2;
@@ -461,7 +461,8 @@ section p, section h2, section h3,
   border-bottom: 0;
   padding: 1.5rem 1.2rem;
   margin: 2.6rem 0 0;
-  max-width: 100%;
+  width: 100%;
+  max-width: none;
   text-align: left;
   line-height: 1.8;
 }
@@ -569,9 +570,9 @@ section p, section h2, section h3,
 
 .eugenie-container .split-image {
   flex: 0 0 48%;
-  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .eugenie-patchwork {
@@ -596,10 +597,10 @@ section p, section h2, section h3,
 }
 
 .eugenie-photo {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  right: auto;
+  top: auto;
+  transform: none;
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -611,15 +612,14 @@ section p, section h2, section h3,
 }
 
 .eugenie-photo-caption {
-  position: absolute;
-  bottom: 1.2rem;
-  left: 1.5rem;
-  right: 170px;
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.88);
+  position: static;
+  margin-top: 1rem;
+  max-width: 34ch;
+  font-size: 0.92rem;
+  color: #6E5A4E;
   font-style: italic;
-  line-height: 1.5;
-  z-index: 3;
+  line-height: 1.65;
+  text-align: center;
 }
 
 .eugenie-text {
@@ -666,49 +666,92 @@ section p, section h2, section h3,
   background-color: #F5EFE6;
 }
 
-.tarifs-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.tarifs-wrap {
+  max-width: 980px;
+}
+
+.tarifs-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.9rem;
+}
+
+#tarifs h2 {
+  margin-bottom: 1rem;
 }
 
 .tarif-ligne {
   width: 100%;
   height: 1px;
-  background-color: #dec8b5;
-  margin: 2rem 0;
+  background-color: #e3d8c8;
+  margin: 1.1rem 0 1rem;
 }
 
-.tarif-bloc-a {
+.tarif-card {
+  border: 1px solid #ece2d4;
+  background: #faf7f2;
+  padding: 1.7rem 2rem 2rem;
+}
+
+.tarif-top {
   display: flex;
-  align-items: baseline;
-  gap: 2.5rem;
-  padding: 1rem 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.tarif-duree {
+.tarif-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: calc(5.5rem + 38px);
-  font-weight: 300;
-  letter-spacing: 0.15em;
-  color: #8A8682;
-  text-transform: none;
+  font-size: 2rem;
+  color: #3D2E22;
+  margin: 0;
 }
 
-.tarif-prix {
+.tarif-subtitle {
   font-family: 'Cormorant Garamond', serif;
-  font-size: calc(6rem + 18px);
-  font-weight: 300;
-  color: #6E5A4E;
-  line-height: 1;
-}
-
-.tarif-note {
-  font-size: 0.9rem;
-  color: #8A8682;
+  font-size: 2rem;
   font-style: italic;
-  line-height: 1.7;
-  margin-bottom: 0.3rem;
+  color: #b59d82;
+  margin: 0.2rem 0 0;
+}
+
+.tarif-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.1rem;
+  font-weight: 400;
+  color: #8c755f;
+  line-height: 1;
+  margin: 0;
+}
+
+.tarif-time {
+  font-size: 0.95rem;
+  color: #d2c0a8;
+  margin-bottom: 1rem;
+}
+
+.tarif-card p {
+  color: #7f7a73;
+  max-width: 68ch;
+}
+
+.tarifs-btn {
+  margin-top: 1.8rem;
+  background: #282317;
+  border-color: #282317;
+  color: #F5EFE6;
+  letter-spacing: 0.18em;
+  padding: 0.85rem 1.6rem;
+}
+
+.tarifs-btn:hover {
+  background: #1f1b12;
+  border-color: #1f1b12;
+  color: #F5EFE6;
 }
 
 .prices {
