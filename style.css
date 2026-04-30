@@ -435,8 +435,11 @@ section p, section h2, section h3,
 }
 
 #soin .sous-titre {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  font-family: 'Cormorant Garamond', serif;
   letter-spacing: 0.05em;
+  line-height: 1.2;
   margin-top: 2.4rem;
   margin-bottom: 1.2rem;
   color: #3D2E22;
@@ -465,6 +468,19 @@ section p, section h2, section h3,
   max-width: none;
   text-align: left;
   line-height: 1.8;
+  position: relative;
+  z-index: 1;
+}
+
+.citation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: calc(40% + 3.5rem);
+  background: #faf7f2;
+  z-index: -1;
 }
 
 .citation cite {
@@ -590,6 +606,7 @@ section p, section h2, section h3,
   right: auto;
   top: auto;
   transform: none;
+  margin-top: 2.5rem;
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -1033,7 +1050,7 @@ footer {
   opacity: 0.85;
   margin-top: 0.1rem;
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
 }
 
@@ -1139,6 +1156,10 @@ footer {
 
   .hero-title {
     font-size: 3rem;
+  }
+
+  .citation::after {
+    display: none;
   }
 
   #espace,
@@ -1451,7 +1472,7 @@ main img {
 }
 
 .espace-bande-text h2 {
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: 2.2rem;
   font-weight: 400;
   color: #3D2E22;
   line-height: 1.05;
