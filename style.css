@@ -773,16 +773,11 @@ section p, section h2, section h3,
 
 #aussi,
 #cadre {
-  background-image: url('images/couché.jpeg');
-  background-size: cover;
-  background-position: center 30%;
-  background-attachment: fixed;
   position: relative;
   margin: 0;
   padding: 4rem 0 5rem;
 }
 
-#aussi::before,
 #cadre::before {
   content: '';
   position: absolute;
@@ -794,10 +789,79 @@ section p, section h2, section h3,
   z-index: 0;
 }
 
-#aussi .container,
 #cadre .container-split {
   position: relative;
   z-index: 1;
+}
+
+#aussi {
+  background: #f7f1e8;
+  border-top: 1px solid rgba(211, 146, 124, 0.15);
+}
+
+#aussi .aussi-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2.2rem 2.6rem;
+  align-items: start;
+}
+
+.aussi-intro h2 {
+  margin-bottom: 1rem;
+  color: #3f3025;
+}
+
+.aussi-intro p,
+.aussi-meta p {
+  color: #6c6157;
+}
+
+.aussi-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  color: #c2b295;
+  margin-bottom: 0.9rem;
+}
+
+.aussi-cards {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.aussi-card {
+  background: #fffaf3;
+  border: 1px solid rgba(211, 146, 124, 0.22);
+  border-radius: 18px;
+  padding: 1.15rem 1.25rem;
+}
+
+.aussi-card h3 {
+  margin: 0 0 0.4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: #5c4537;
+}
+
+.aussi-card p {
+  margin: 0;
+  line-height: 1.8;
+  color: #74685f;
+  font-size: 0.98rem;
+}
+
+.aussi-meta {
+  grid-column: 1 / -1;
+  background: #fffaf3;
+  border: 1px solid rgba(211, 146, 124, 0.15);
+  border-radius: 22px;
+  padding: 1.4rem 1.5rem 1.5rem;
+}
+
+.aussi-meta .espace-btn {
+  margin-top: 0.8rem;
 }
 
 .section-card {
@@ -1119,6 +1183,11 @@ footer {
     column-count: 1;
   }
 
+  #aussi .aussi-layout {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
   #aussi .container,
   #cadre .container-split {
     flex-direction: column;
@@ -1303,6 +1372,15 @@ footer {
   margin-top: 3rem;
   flex-wrap: wrap;
 }
+
+.section-divider-short {
+  width: 42px;
+  height: 1px;
+  background: #6E5A4E;
+  opacity: 0.45;
+  margin: 0 auto 2.6rem;
+}
+
 .btn-ghost {
   display: inline-flex;
   align-items: center;
