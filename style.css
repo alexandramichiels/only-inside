@@ -1,8 +1,12 @@
 .quote {
-  width: 100%;
-  text-align: center;
   font-size: 48px;
   white-space: nowrap;
+}
+
+.band {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :root {
