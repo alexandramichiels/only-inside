@@ -1,3 +1,10 @@
+.quote {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  white-space: nowrap;
+}
+
 :root {
   --bg: #dec8b5;
   --text: #6E5A4E;
@@ -478,7 +485,7 @@ section p, section h2, section h3,
   top: 0;
   bottom: 0;
   left: 100%;
-  width: calc(40% + 3.5rem);
+  width: calc(44% + 4.5rem);
   background: #faf7f2;
   z-index: -1;
 }
@@ -1475,7 +1482,7 @@ main img {
   font-size: 2.2rem;
   font-weight: 400;
   color: #3D2E22;
-  line-height: 1.05;
+  line-height: 1.2;
   margin-bottom: 1.6rem;
 }
 
