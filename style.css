@@ -576,6 +576,13 @@ section p, section h2, section h3,
   text-align: center;
 }
 
+.eugenie-logo {
+  width: 150px;
+  height: auto;
+  margin-top: 0.9rem;
+  opacity: 0.9;
+}
+
 .eugenie-text {
   flex: 1;
   display: flex;
