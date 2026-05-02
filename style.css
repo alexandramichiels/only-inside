@@ -374,7 +374,7 @@ section p, section h2, section h3,
 
 #soin .soin-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   flex: 0 0 56%;
   max-width: 760px;
   padding: 0 4vw;
@@ -391,6 +391,8 @@ section p, section h2, section h3,
 }
 
 #soin .soin-image {
+  position: relative;
+  z-index: 0;
   flex: 0 0 40%;
 }
 
@@ -404,15 +406,8 @@ section p, section h2, section h3,
   border-radius: 24px;
 }
 
-#soin .sous-titre {
-  font-size: 2.2rem;
-  font-weight: 400;
-  font-family: 'Cormorant Garamond', serif;
-  letter-spacing: 0.05em;
-  line-height: 1.2;
-  margin-top: 2.4rem;
-  margin-bottom: 1.2rem;
-  color: #3D2E22;
+#soin .soin-main .soin-bullets + h2 {
+  margin-top: 2.5rem;
 }
 
 #soin .soin-main p,
@@ -448,7 +443,8 @@ section p, section h2, section h3,
   top: 0;
   bottom: 0;
   left: 100%;
-  width: calc(44% + 4.5rem);
+  /* Prolonge le fond crème au-delà du bord droit de la photo (colonne + interstice + léger dépassement) */
+  width: calc(72% + 11rem);
   background: #faf7f2;
   z-index: -1;
 }
@@ -526,10 +522,6 @@ section p, section h2, section h3,
 }
 
 /* ---- #eugenie ---- */
-
-#eugenie {
-  background-color: #EDE4D3;
-}
 
 .eugenie-container {
   display: flex;
@@ -643,62 +635,76 @@ section p, section h2, section h3,
 }
 
 #tarifs h2 {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.35rem;
+  color: var(--accent);
 }
 
 .tarif-ligne {
   width: 100%;
   height: 1px;
-  background-color: #e3d8c8;
-  margin: 1.1rem 0 1rem;
+  background-color: #e8dfd4;
+  margin: 1.15rem 0 1.05rem;
 }
 
 .tarif-card {
-  border: 1px solid #ece2d4;
-  background: #faf7f2;
-  padding: 1.9rem 2.15rem 2.15rem;
+  border: 1px solid #ebe4dc;
+  background: #fdfcfa;
+  padding: 2rem 2.35rem 2.35rem;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(62, 46, 34, 0.06);
 }
 
 .tarif-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .tarif-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.15rem;
-  color: #3D2E22;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: var(--accent);
   margin: 0;
+  line-height: 1.15;
 }
 
 .tarif-subtitle {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.9rem;
+  font-size: 1.85rem;
   font-style: italic;
-  color: #b59d82;
-  margin: 0.2rem 0 0;
+  font-weight: 400;
+  color: var(--accent);
+  margin: 0.35rem 0 0;
+  line-height: 1.2;
 }
 
 .tarif-price {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 3rem;
+  font-size: clamp(3.35rem, 5vw, 4.35rem);
   font-weight: 400;
-  color: #8c755f;
-  line-height: 1;
+  color: var(--accent);
+  line-height: 0.95;
   margin: 0;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
 }
 
 .tarif-time {
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
-  color: #d2c0a8;
+  color: #958f87;
   margin-bottom: 1rem;
 }
 
-.tarif-card p {
-  color: #7f7a73;
+/* Paragraphes du bloc tarif uniquement (pas les titres dans .tarif-top) */
+.tarif-card > p:not(.tarif-time) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.02rem;
+  color: #5c534b;
   max-width: 68ch;
+  line-height: 1.85;
 }
 
 .tarifs-btn {
@@ -738,7 +744,6 @@ section p, section h2, section h3,
 
 #aussi {
   background: #f7f1e8;
-  border-top: 1px solid rgba(211, 146, 124, 0.15);
 }
 
 #aussi .aussi-layout {
@@ -789,7 +794,8 @@ section p, section h2, section h3,
   min-height: 430px;
   max-height: 540px;
   object-fit: cover;
-  object-position: center;
+  /* Ancrer le haut du cliché pour garder la tête et un peu d’espace au-dessus */
+  object-position: center top;
   border-radius: 26px;
 }
 
@@ -1165,8 +1171,8 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: clamp(160px, 22vh, 260px);
-  padding: 0 4vw;
+  min-height: 0;
+  padding: 1.5rem 4vw;
 }
 
 .espace-top-quote {
@@ -1216,7 +1222,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-/* Accent de ligne au milieu d’un titre de section (réf. #espace) */
+/* Accent : même terracotta que la citation « Ici, le corps… » */
 .espace-h2-italic {
   font-style: italic;
   color: #9a7e60;
