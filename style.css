@@ -1,7 +1,7 @@
 :root {
   --bg: #dec8b5;
   --text: #6E5A4E;
-  --secondary-text: #8A8682;
+  --secondary-text: #9a7e60;
   --light: #f5efe6;
   --accent: #d3927c;
   --accent-2: #e79f81;
@@ -259,7 +259,7 @@ nav {
 .hero-title {
   font-size: calc(5rem - 9px);
   font-weight: 300;
-  color: #d3927c;
+  color: #9A7E60;
   text-shadow: 0 2px 25px rgba(0,0,0,0.25);
   letter-spacing: 0.08em;
   margin-bottom: 0.2rem;
@@ -288,6 +288,11 @@ nav {
   background-color: rgba(245, 239, 230, 0.7);
   border-color: #8FA89A;
   color: #d3927c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   margin: 0;
   position: absolute;
   /* Bord droit = bord droit de .espace-photo (cote) */
@@ -297,8 +302,9 @@ nav {
 }
 
 .hero .btn:hover {
-  background-color: rgba(245, 239, 230, 1);
-  color: #d3927c;
+  background-color: var(--accent-2);
+  color: var(--light);
+  border-color: transparent;
 }
 
 /* ---- Button ---- */
@@ -602,8 +608,8 @@ main img {
   top: 0;
   bottom: 0;
   left: 100%;
-  /* Prolonge le fond : largeur portée à +50 % par rapport à la valeur précédente */
-  width: calc(108% + 16.5rem + 15px);
+  /* Prolonge le fond ; −30 px vs version précédente */
+  width: calc(108% + 16.5rem + 15px - 30px);
   background: #f5efe6;
   z-index: -1;
 }
@@ -612,7 +618,7 @@ main img {
   display: block;
   font-size: 1.3rem;
   margin-top: 1rem;
-  color: #9A7E60;
+  color: #d3927c;
   font-style: italic;
   letter-spacing: 0.04em;
 }
@@ -710,7 +716,7 @@ main img {
   width: 220px;
   height: auto;
   left: -70px;
-  top: -110px;
+  top: -130px;
   opacity: 1;
   z-index: 0;
   pointer-events: none;
@@ -1262,7 +1268,7 @@ footer {
   .eugenie-logo-bg {
     width: 170px;
     left: -52px;
-    top: -92px;
+    top: -112px;
   }
 
   .eugenie-photo {
