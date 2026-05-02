@@ -290,8 +290,8 @@ nav {
   color: #d3927c;
   margin: 0;
   position: absolute;
-  right: calc(8vw + 50px);
-  top: calc(50% + 230px);
+  right: calc(8vw + 60px);
+  top: calc(50% + 240px);
   transform: translateY(-50%);
 }
 
@@ -526,7 +526,7 @@ main img {
 
 #soin {
   position: relative;
-  background: #f5efe6;
+  background: #fffdf9;
 }
 
 #soin .soin-content {
@@ -806,7 +806,7 @@ main img {
 
 .tarif-card {
   border: 1px solid #ebe4dc;
-  background: #faf7f2;
+  background: #fffdf9;
   padding: 2rem 2.35rem 2.35rem;
   border-radius: 14px;
   box-shadow: 0 12px 40px rgba(62, 46, 34, 0.06);
@@ -1010,7 +1010,7 @@ main img {
 }
 
 .section-divider-short {
-  width: 42px;
+  width: 92px;
   height: 1px;
   margin: 0 auto;
   background: var(--text);
