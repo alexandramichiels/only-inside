@@ -510,7 +510,7 @@ main img {
 }
 
 .espace-bande-text p {
-  color: #8A8682;
+  color: #9a7e60;
   font-size: 1.05rem;
   line-height: 2;
   max-width: 50ch;
@@ -715,8 +715,8 @@ main img {
   position: absolute;
   width: 220px;
   height: auto;
-  left: -70px;
-  top: -140px;
+  left: -90px;
+  top: -170px;
   opacity: 1;
   z-index: 0;
   pointer-events: none;
@@ -859,7 +859,7 @@ main img {
 
 .tarif-time {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
+  font-size: calc(0.95rem - 2px);
   font-style: italic;
   color: var(--gold);
   margin-bottom: 1rem;
@@ -1268,8 +1268,8 @@ footer {
 
   .eugenie-logo-bg {
     width: 170px;
-    left: -52px;
-    top: -122px;
+    left: -72px;
+    top: -152px;
   }
 
   .eugenie-photo {
