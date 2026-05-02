@@ -597,7 +597,7 @@ main img {
   border-right: 0;
   border-bottom: 0;
   padding: 1rem 1.2rem;
-  margin: 2.6rem 0 0;
+  margin: calc(2.6rem + 20px) 0 0;
   width: 100%;
   max-width: none;
   text-align: left;
