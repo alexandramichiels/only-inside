@@ -7,7 +7,7 @@
   --accent-2: #e79f81;
   --sage: #8FA89A;
   --border: #d3927c;
-  --gold: #C5BDB3;
+  --gold: #CBBFA3;
 }
 
 *,
@@ -290,7 +290,8 @@ nav {
   color: #d3927c;
   margin: 0;
   position: absolute;
-  right: calc(8vw + 60px);
+  /* Bord droit = bord droit de .espace-photo (cote) */
+  right: calc((100vw - min(1400px, 100vw)) / 2 + 6vw + 0.4cm);
   top: calc(50% + 240px);
   transform: translateY(-50%);
 }
@@ -413,8 +414,9 @@ section p, section h2, section h3,
 
 .espace-label {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.72rem;
+  font-weight: 400;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--gold);
