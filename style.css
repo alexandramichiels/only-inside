@@ -443,8 +443,8 @@ section p, section h2, section h3,
   top: 0;
   bottom: 0;
   left: 100%;
-  /* Prolonge le fond crème au-delà du bord droit de la photo (colonne + interstice + léger dépassement) */
-  width: calc(72% + 11rem);
+  /* Prolonge le fond crème au-delà du bord droit de la photo (+ 10px au-delà du cadre photo) */
+  width: calc(72% + 11rem + 10px);
   background: #faf7f2;
   z-index: -1;
 }
@@ -818,6 +818,19 @@ section p, section h2, section h3,
   text-transform: uppercase;
 }
 
+/* Séparateur entre Réserver et FAQ (ligne courte centrée, fond crème pour éviter la bande « tan » du body) */
+.section-divider-wrap {
+  background-color: var(--light);
+  padding: 1.75rem 4vw;
+}
+
+.section-divider-short {
+  width: 42px;
+  height: 1px;
+  margin: 0 auto;
+  background: var(--text);
+  opacity: 0.4;
+}
 
 /* ---- #faq ---- */
 
@@ -1173,7 +1186,8 @@ footer {
   justify-content: center;
   width: 100%;
   min-height: 0;
-  padding: 1.5rem 4vw;
+  /* Haut : même ordre de grandeur que bas (1.5rem bandeau + 3.5rem .espace-split) jusqu’à la photo côte */
+  padding: 5rem 4vw 1.5rem;
 }
 
 .espace-top-quote {
