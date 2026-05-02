@@ -1196,25 +1196,118 @@ footer {
 }
 
 @media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  section h2 {
+    font-size: clamp(1.65rem, 5.5vw, 2rem);
+    margin-bottom: 1.35rem;
+  }
+
   .hero {
     height: auto;
     min-height: auto;
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 88px;
+    padding-bottom: 2rem;
   }
 
   .hero-image-wrap {
-    min-height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-height: min(72vh, 620px);
     background-attachment: scroll;
+    padding: 0 0 1.5rem;
   }
 
   .hero .container {
-    padding: 2.5rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+    padding: 1.5rem 1.25rem 0;
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .hero-title {
-    font-size: 3rem;
+    font-size: clamp(2.1rem, 11vw, 3rem);
+    letter-spacing: 0.06em;
+    line-height: 1.05;
+  }
+
+  .tagline {
+    font-size: clamp(1.25rem, 6.5vw, 1.85rem);
+    letter-spacing: 0.08em;
+    line-height: 1.28;
+    margin-bottom: 1rem;
+  }
+
+  .hero .btn {
+    position: static;
+    transform: none;
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(100%, 22rem);
+    width: auto;
+  }
+
+  .espace-quote-band {
+    padding: 3rem 5vw 1.25rem;
+  }
+
+  .espace-top-quote {
+    font-size: clamp(1.35rem, 4.5vw, 1.85rem);
+    padding: 0 0.25rem;
+  }
+
+  .espace-split {
+    flex-direction: column;
+    padding: 2.5rem 5vw 3rem;
+  }
+
+  .espace-bande-photo {
+    padding: 3rem 0;
+  }
+
+  .espace-bande-layout {
+    max-width: none;
+  }
+
+  #soin .soin-content {
+    padding: 0 5vw;
+    max-width: none;
+  }
+
+  #soin .soin-layout {
+    gap: 2rem;
+  }
+
+  #soin .soin-photo {
+    max-height: 420px;
+  }
+
+  .citation {
+    font-size: clamp(1.15rem, 4vw, 1.45rem);
+    padding: 1rem 1rem;
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .citation cite {
+    font-size: 1.05rem;
   }
 
   .citation::after {
@@ -1223,6 +1316,89 @@ footer {
 
   .citation-quote {
     white-space: normal;
+  }
+
+  #pour-qui .split-text {
+    padding-left: 0;
+    flex: none;
+    width: 100%;
+  }
+
+  #pour-qui .split-image {
+    flex: none;
+    width: 100%;
+  }
+
+  #pour-qui .split-photo {
+    height: min(72vw, 320px);
+    max-height: none;
+  }
+
+  .tarif-card {
+    padding: 1.5rem 1.15rem 1.75rem;
+  }
+
+  .tarif-top {
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .tarif-title {
+    font-size: 1.65rem;
+  }
+
+  .tarif-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .tarif-price {
+    font-size: clamp(3.25rem, 16vw, 5rem);
+    width: 100%;
+    text-align: right;
+    margin-top: 0.25rem;
+  }
+
+  #reservation {
+    padding: 4rem 1.25rem;
+  }
+
+  #reservation h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  #reservation p {
+    font-size: 1rem;
+    padding: 0 0.25rem;
+  }
+
+  .contact-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .resa-btn {
+    width: 100%;
+    max-width: 300px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .burger {
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .faq-item summary {
+    font-size: 1.05rem;
+    padding-right: 0.5rem;
   }
 
   #espace,
@@ -1234,12 +1410,15 @@ footer {
 
   .soin-bande-defilante {
     background-attachment: scroll;
-    height: 190px;
+    height: min(42vw, 220px);
+    min-height: 160px;
   }
 
   .eugenie-container {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    box-sizing: border-box;
   }
 
   .eugenie-container .split-image {
@@ -1267,6 +1446,7 @@ footer {
 
   .eugenie-photo-caption {
     font-size: 0.78rem;
+    padding: 0 0.5rem;
   }
 
   .eugenie-text {
@@ -1274,6 +1454,8 @@ footer {
     border-left: none;
     border-top: 1px solid rgba(211, 146, 124, 0.3);
     padding-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .container-split,
@@ -1282,13 +1464,10 @@ footer {
     gap: 1.5rem;
   }
 
-  .espace-split {
-    flex-direction: column;
-  }
-
   .espace-text {
+    margin-left: 0;
     flex: none;
-    padding: 4rem 6vw;
+    padding: 2.5rem 5vw 3rem;
   }
 
   .espace-image {
@@ -1297,11 +1476,13 @@ footer {
   }
 
   .espace-photo {
-    min-height: 320px;
+    min-height: 260px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .split-photo {
-    max-height: 280px;
+    max-height: min(55vw, 300px);
     width: 100%;
   }
 
@@ -1310,6 +1491,63 @@ footer {
     gap: 2rem;
   }
 
+  .footer-location-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  footer {
+    padding: 40px 6vw 24px;
+  }
+
+  .footer-logo {
+    font-size: clamp(2.2rem, 9vw, 3rem);
+  }
+
+  .footer-tagline {
+    white-space: normal;
+    max-width: 36ch;
+  }
+
+  .section-divider-wrap {
+    padding: 1.25rem 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 80px;
+  }
+
+  .nav-inner {
+    min-height: 64px;
+  }
+
+  .nav-logo {
+    height: 40px;
+  }
+
+  .logo {
+    font-size: 1.45rem;
+  }
+
+  .tarif-price {
+    font-size: clamp(2.75rem, 20vw, 4rem);
+    text-align: center;
+  }
+
+  .tarif-top {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tarif-top > div {
+    width: 100%;
+  }
+
+  .aussi-tags {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 760px) {
