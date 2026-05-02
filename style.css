@@ -430,7 +430,7 @@ section p, section h2, section h3,
 
 .espace-h2-italic {
   font-style: italic;
-  color: #9a7e60;
+  color: #9A7E60;
   font-weight: 400;
 }
 
@@ -526,7 +526,7 @@ main img {
 
 #soin {
   position: relative;
-  background: #fffdf9;
+  background: #f5efe6;
 }
 
 #soin .soin-content {
@@ -579,7 +579,7 @@ main img {
   font-size: 1.55rem;
   font-style: italic;
   color: #9A7E60;
-  background: #faf7f2;
+  background: #f5efe6;
   border-left: 1px solid rgba(211, 146, 124, 0.65);
   border-top: 0;
   border-right: 0;
@@ -600,9 +600,9 @@ main img {
   top: 0;
   bottom: 0;
   left: 100%;
-  /* Prolonge le fond crème au-delà du bord droit de la photo (+ 10px au-delà du cadre photo) */
-  width: calc(72% + 11rem + 10px);
-  background: #faf7f2;
+  /* Prolonge le fond : largeur portée à +50 % par rapport à la valeur précédente */
+  width: calc(108% + 16.5rem + 15px);
+  background: #f5efe6;
   z-index: -1;
 }
 
@@ -610,7 +610,7 @@ main img {
   display: block;
   font-size: 1.3rem;
   margin-top: 1rem;
-  color: #d7c7a9;
+  color: #9A7E60;
   font-style: italic;
   letter-spacing: 0.04em;
 }
@@ -793,7 +793,7 @@ main img {
 
 #tarifs h2 {
   margin-bottom: 1.35rem;
-  color: var(--text);
+  color: #6E5A4E;
 }
 
 .tarif-ligne {
@@ -805,7 +805,7 @@ main img {
 
 .tarif-card {
   border: 1px solid #ebe4dc;
-  background: #fdfcfa;
+  background: #faf7f2;
   padding: 2rem 2.35rem 2.35rem;
   border-radius: 14px;
   box-shadow: 0 12px 40px rgba(62, 46, 34, 0.06);
@@ -822,7 +822,7 @@ main img {
   font-family: 'Cormorant Garamond', serif;
   font-size: calc(2.1rem + 10px);
   font-weight: 400;
-  color: var(--accent);
+  color: #6E5A4E;
   margin: 0;
   line-height: 1.15;
 }
@@ -832,7 +832,7 @@ main img {
   font-size: calc(1.85rem + 10px);
   font-style: italic;
   font-weight: 400;
-  color: var(--accent);
+  color: #6E5A4E;
   margin: 0.35rem 0 0;
   line-height: 1.2;
 }
@@ -841,7 +841,7 @@ main img {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(calc(3.35rem + 10px), calc(5vw + 10px), calc(4.35rem + 10px));
   font-weight: 400;
-  color: var(--accent);
+  color: #6E5A4E;
   line-height: 0.95;
   margin: 0;
   letter-spacing: -0.02em;
@@ -851,7 +851,7 @@ main img {
 .tarif-time {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
-  color: #958f87;
+  color: #6E5A4E;
   margin-bottom: 1rem;
 }
 
@@ -859,7 +859,7 @@ main img {
 .tarif-card > p:not(.tarif-time) {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.02rem;
-  color: #5c534b;
+  color: #6E5A4E;
   max-width: 68ch;
   line-height: 1.85;
 }
@@ -874,7 +874,7 @@ main img {
   position: relative;
   margin: 0;
   padding: 4rem 0 5rem;
-  background: #f7f1e8;
+  background: #f5efe6;
 }
 
 #aussi .aussi-layout {
