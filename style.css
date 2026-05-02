@@ -592,14 +592,25 @@ main img {
   border-top: 0;
   border-right: 0;
   border-bottom: 0;
-  padding: 1.5rem 1.2rem;
+  padding: 1rem 1.2rem;
   margin: 2.6rem 0 0;
   width: 100%;
   max-width: none;
   text-align: left;
-  line-height: 1.8;
+  line-height: 1.35;
   position: relative;
   z-index: 1;
+}
+
+.citation-quote {
+  display: block;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .citation-quote {
+    white-space: normal;
+  }
 }
 
 .citation::after {
@@ -617,7 +628,7 @@ main img {
 .citation cite {
   display: block;
   font-size: 1.3rem;
-  margin-top: 1rem;
+  margin-top: 0.65rem;
   color: #d3927c;
   font-style: italic;
   letter-spacing: 0.04em;
