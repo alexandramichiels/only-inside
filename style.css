@@ -6,7 +6,6 @@
   --accent: #d3927c;
   --accent-2: #e79f81;
   --sage: #8FA89A;
-  --gray: #8A8682;
   --border: #d3927c;
   --gold: #CBBFA3;
 }
@@ -258,7 +257,6 @@ nav {
 }
 
 .hero-title {
-  font-family: 'Cormorant Garamond', serif;
   font-size: calc(5rem - 9px);
   font-weight: 300;
   color: #d3927c;
@@ -338,7 +336,6 @@ nav {
 }
 
 section h2 {
-  font-family: "Cormorant Garamond", serif;
   font-size: 2.2rem;
   font-weight: 400;
   font-style: normal;
@@ -364,6 +361,166 @@ section p, section h2, section h3,
 
 /* ---- #espace ---- */
 
+#espace {
+  background-color: #F5EFE6;
+  padding: 0;
+}
+
+.espace-layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+}
+
+.espace-quote-band {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 0;
+  padding: 5rem 4vw 1.5rem;
+}
+
+.espace-top-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #d3927c;
+  width: 100%;
+  max-width: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+}
+
+.espace-split {
+  gap: 4rem;
+  align-items: center;
+  padding: 3.5rem 6vw 5rem;
+  max-width: 1400px;
+}
+
+.espace-text {
+  flex: 0 0 48%;
+  padding: 0;
+  margin-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.espace-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.8rem;
+}
+
+.espace-separateur {
+  width: 2rem;
+  height: 1px;
+  background: #6E5A4E;
+  margin-bottom: 2rem;
+}
+
+.espace-h2-italic {
+  font-style: italic;
+  color: #9a7e60;
+  font-weight: 400;
+}
+
+.espace-text p {
+  font-size: 1rem;
+  color: var(--secondary-text);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+  max-width: 48ch;
+}
+
+.espace-image {
+  flex: 0 0 48%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.espace-photo {
+  width: calc(100% - 0.4cm);
+  height: 560px;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 24px;
+  margin-right: 0.4cm;
+}
+
+.espace-btn {
+  margin-top: 2.5rem;
+  align-self: flex-start;
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgba(245, 239, 230, 0.5);
+  border: 1px solid #8FA89A;
+  color: #d3927c;
+  padding: 0.9rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.espace-btn:hover {
+  background-color: var(--accent-2);
+  color: var(--light);
+  border-color: transparent;
+}
+
+main img {
+  border-radius: 24px;
+}
+
+.espace-bande-photo {
+  background-color: #F5EFE6;
+  padding: 5rem 0;
+}
+
+.espace-bande-layout {
+  gap: 4rem;
+  align-items: center;
+  max-width: 1250px;
+}
+
+.espace-bande-text {
+  flex: 0 0 46%;
+  padding: 0;
+}
+
+.espace-bande-text p {
+  color: #8A8682;
+  font-size: 1.05rem;
+  line-height: 2;
+  max-width: 50ch;
+  margin-bottom: 0.9rem;
+}
+
+.espace-bande-image {
+  flex: 0 0 46%;
+}
+
+.espace-bande-photo-img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 24px;
+}
 
 /* ---- #soin ---- */
 
@@ -493,7 +650,6 @@ section p, section h2, section h3,
 
 #pour-qui {
   position: relative;
-  background-image: none;
   background-color: #F5EFE6;
 }
 
@@ -712,38 +868,12 @@ section p, section h2, section h3,
   margin-top: 2rem;
 }
 
-.prices {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 1rem;
-}
-
-.prices li {
-  display: grid;
-  gap: 0.2rem;
-  padding: 1.2rem;
-  border: 1px solid var(--accent);
-  border-radius: 2px;
-}
-
-.prices strong {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2.5rem;
-  line-height: 1;
-  font-weight: 500;
-}
-
 /* ---- #aussi ---- */
 
 #aussi {
   position: relative;
   margin: 0;
   padding: 4rem 0 5rem;
-}
-
-#aussi {
   background: #f7f1e8;
 }
 
@@ -755,11 +885,7 @@ section p, section h2, section h3,
 }
 
 .aussi-panel {
-  background: transparent;
-  border: 0;
-  border-radius: 0;
   padding: 0;
-  box-shadow: none;
 }
 
 .aussi-intro p,
@@ -816,6 +942,60 @@ section p, section h2, section h3,
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+/* ---- #reservation (contact) ---- */
+
+#reservation {
+  background: #f5efe6 !important;
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+#reservation .section-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+}
+
+#reservation h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#reservation p {
+  color: #5C4A3A;
+  margin: 0 auto 0.8rem;
+  max-width: 72ch;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.contact-btns {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.resa-btn {
+  background-color: rgba(245, 239, 230, 0.5);
+  border-color: #8FA89A;
+  color: #d3927c;
+  margin-top: 0;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.resa-btn:hover {
+  background-color: var(--accent-2);
+  color: var(--light);
+  border-color: transparent;
 }
 
 /* Séparateur entre Réserver et FAQ (ligne courte centrée, fond crème pour éviter la bande « tan » du body) */
@@ -1103,6 +1283,24 @@ footer {
     flex-direction: column;
   }
 
+  .espace-split {
+    flex-direction: column;
+  }
+
+  .espace-text {
+    flex: none;
+    padding: 4rem 6vw;
+  }
+
+  .espace-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .espace-photo {
+    min-height: 320px;
+  }
+
   .split-photo {
     max-height: 280px;
     width: 100%;
@@ -1118,233 +1316,5 @@ footer {
 @media (min-width: 760px) {
   .section {
     padding: 120px 0;
-  }
-}
-
-#reservation {
-  background: #f5efe6 !important;
-  text-align: center;
-  padding: 6rem 1.5rem;
-}
-#reservation .section-label {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.2rem;
-}
-#reservation h2 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-#reservation p {
-  color: #5C4A3A;
-  margin: 0 auto 0.8rem;
-  max-width: 72ch;
-  font-size: 1.05rem;
-  text-align: center;
-}
-.contact-btns {
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-  margin-top: 3rem;
-  flex-wrap: wrap;
-}
-
-.resa-btn {
-  background-color: rgba(245, 239, 230, 0.5);
-  border-color: #8FA89A;
-  color: #d3927c;
-  margin-top: 0;
-  min-width: 160px;
-  justify-content: center;
-}
-
-.resa-btn:hover {
-  background-color: var(--accent-2);
-  color: var(--light);
-  border-color: transparent;
-}
-
-#espace {
-  background-color: #F5EFE6;
-  padding: 0;
-}
-
-.espace-layout {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  width: 100%;
-}
-
-.espace-quote-band {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 0;
-  /* Haut : même ordre de grandeur que bas (1.5rem bandeau + 3.5rem .espace-split) jusqu’à la photo côte */
-  padding: 5rem 4vw 1.5rem;
-}
-
-.espace-top-quote {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
-  font-weight: 300;
-  font-style: italic;
-  color: #d3927c;
-  width: 100%;
-  max-width: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  line-height: 1.15;
-}
-
-.espace-split {
-  gap: 4rem;
-  align-items: center;
-  padding: 3.5rem 6vw 5rem;
-  max-width: 1400px;
-}
-
-.espace-text {
-  flex: 0 0 48%;
-  padding: 0;
-  margin-left: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.espace-label {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.8rem;
-}
-
-.espace-separateur {
-  width: 2rem;
-  height: 1px;
-  background: #6E5A4E;
-  margin-bottom: 2rem;
-}
-
-/* Accent : même terracotta que la citation « Ici, le corps… » */
-.espace-h2-italic {
-  font-style: italic;
-  color: #9a7e60;
-  font-weight: 400;
-}
-
-.espace-text p {
-  font-size: 1rem;
-  color: var(--secondary-text);
-  line-height: 1.9;
-  margin-bottom: 1rem;
-  max-width: 48ch;
-}
-
-.espace-image {
-  flex: 0 0 48%;
-  overflow: hidden;
-  padding: 0;
-}
-
-.espace-photo {
-  width: calc(100% - 0.4cm);
-  height: 560px;
-  min-height: 0;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 24px;
-  margin-right: 0.4cm;
-}
-
-.espace-btn {
-  margin-top: 2.5rem;
-  align-self: flex-start;
-  display: inline-block;
-  text-decoration: none;
-  background-color: rgba(245, 239, 230, 0.5);
-  border: 1px solid #8FA89A;
-  color: #d3927c;
-  padding: 0.9rem 2rem;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.espace-btn:hover {
-  background-color: var(--accent-2);
-  color: var(--light);
-  border-color: transparent;
-}
-
-main img {
-  border-radius: 24px;
-}
-
-.espace-bande-photo {
-  background-color: #F5EFE6;
-  padding: 5rem 0;
-}
-
-.espace-bande-layout {
-  gap: 4rem;
-  align-items: center;
-  max-width: 1250px;
-}
-
-.espace-bande-text {
-  flex: 0 0 46%;
-  padding: 0;
-}
-
-.espace-bande-text p {
-  color: #8A8682;
-  font-size: 1.05rem;
-  line-height: 2;
-  max-width: 50ch;
-  margin-bottom: 0.9rem;
-}
-
-.espace-bande-image {
-  flex: 0 0 46%;
-}
-
-.espace-bande-photo-img {
-  width: 100%;
-  max-height: 560px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 24px;
-}
-
-@media (max-width: 768px) {
-  .espace-split {
-    flex-direction: column;
-  }
-  .espace-text {
-    flex: none;
-    padding: 4rem 6vw;
-  }
-  .espace-image {
-    flex: none;
-    width: 100%;
-  }
-  .espace-photo {
-    min-height: 320px;
   }
 }
