@@ -237,19 +237,20 @@ nav {
   backdrop-filter: none;
   padding: 0;
   max-width: 520px;
-  margin-left: auto;
-  margin-right: 6vw;
+  margin-left: auto !important;
+  margin-right: 6vw !important;
   align-self: flex-start;
   padding-top: 16vh;
-  text-align: right;
+  text-align: right !important;
   transform: none;
 }
 
 .hero-title,
 .tagline {
-  margin-left: 0;
+  margin-left: auto !important;
+  margin-right: 0 !important;
   padding-left: 0;
-  text-align: right;
+  text-align: right !important;
 }
 
 .hero-title {
@@ -1244,21 +1245,23 @@ footer {
   }
 
   .hero .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: 5vw !important;
     transform: none;
     padding: 1.5rem 1.25rem 0;
-    padding-top: 1.5rem;
-    max-width: 100%;
-    width: 100%;
+    padding-top: 6vh;
+    max-width: 80%;
+    width: auto;
     box-sizing: border-box;
-    align-self: auto;
-    text-align: center;
+    align-self: flex-start;
+    text-align: right !important;
   }
 
   .hero-title,
   .tagline {
-    text-align: center;
+    text-align: right !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
   }
 
   .hero-title {
