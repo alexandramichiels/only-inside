@@ -202,7 +202,9 @@ nav {
 /* ---- Hero ---- */
 
 .hero {
-  height: 82vh;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-image-wrap {
@@ -252,8 +254,8 @@ nav {
 .hero-title {
   font-size: calc(5rem - 9px);
   font-weight: 300;
-  color: #9A7E60;
-  text-shadow: 0 2px 25px rgba(0,0,0,0.25);
+  color: #F5EFE6;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.45);
   letter-spacing: 0.08em;
   margin-bottom: 0.2rem;
 }
@@ -263,8 +265,8 @@ nav {
   font-size: calc(3.6rem + 2px);
   font-weight: 300;
   font-style: italic;
-  color: #d3927c;
-  text-shadow: 0 1px 15px rgba(0,0,0,0.2);
+  color: #dec8b5;
+  text-shadow: 0 1px 20px rgba(0,0,0,0.4);
   letter-spacing: 0.12em;
   text-transform: none;
   margin-bottom: 1.5rem;
@@ -275,21 +277,22 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0.8rem 2rem;
+  padding: 0.64rem 1.6rem;
   background-color: rgba(245, 239, 230, 0.8);
   border-color: #8FA89A;
   color: #d3927c;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.58rem;
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
   position: absolute;
   /* Bord droit = bord droit de .espace-photo (cote) */
-  right: calc((100vw - min(1400px, 100vw)) / 2 + 6vw + 0.4cm);
-  top: calc(50% + 240px);
-  transform: translateY(-50%);
+  right: 6vw;
+  bottom: 6vh;
+  top: auto;
+  transform: none;
 }
 
 .hero .btn:hover {
@@ -1214,10 +1217,8 @@ footer {
   }
 
   .hero {
-    height: auto;
+    height: 100svh;
     min-height: auto;
-    padding-top: 88px;
-    padding-bottom: 2rem;
   }
 
   .hero-image-wrap {
