@@ -236,26 +236,27 @@ nav {
   background-color: transparent;
   backdrop-filter: none;
   padding: 0;
-  max-width: 600px;
-  margin-left: calc(8vw - 1.5cm);
-  margin-right: auto;
-  padding-top: 1vh;
-  text-align: left;
-  transform: translateY(-1cm);
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: 6vw;
+  align-self: flex-start;
+  padding-top: 16vh;
+  text-align: right;
+  transform: none;
 }
 
 .hero-title,
 .tagline {
   margin-left: 0;
   padding-left: 0;
-  text-align: left;
+  text-align: right;
 }
 
 .hero-title {
   font-size: calc(5rem - 9px);
   font-weight: 300;
-  color: #F5EFE6;
-  text-shadow: 0 2px 30px rgba(0,0,0,0.45);
+  color: #6E5A4E;
+  text-shadow: 0 2px 22px rgba(245, 239, 230, 0.75);
   letter-spacing: 0.08em;
   margin-bottom: 0.2rem;
 }
@@ -277,22 +278,23 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0.64rem 1.6rem;
+  padding: 0.704rem 1.76rem;
   background-color: rgba(245, 239, 230, 0.8);
   border-color: #8FA89A;
   color: #d3927c;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.58rem;
+  font-size: 0.638rem;
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
   position: absolute;
-  /* Bord droit = bord droit de .espace-photo (cote) */
   right: 6vw;
   bottom: 6vh;
   top: auto;
+  left: auto;
   transform: none;
+  z-index: 2;
 }
 
 .hero .btn:hover {
@@ -465,9 +467,9 @@ section p, section h2, section h3,
   background-color: rgba(245, 239, 230, 0.5);
   border: 1px solid #8FA89A;
   color: #d3927c;
-  padding: 0.64rem 1.6rem;
+  padding: 0.704rem 1.76rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.58rem;
+  font-size: 0.638rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -989,10 +991,13 @@ main img {
   border-color: #8FA89A;
   color: #d3927c;
   margin-top: 0;
-  padding: 0.64rem 1.6rem;
-  font-size: 0.58rem;
+  padding: 0.704rem 1.76rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.638rem;
+  font-weight: 400;
   letter-spacing: 0.2em;
-  min-width: 130px;
+  text-transform: uppercase;
+  min-width: 143px;
   justify-content: center;
 }
 
@@ -1006,6 +1011,10 @@ main img {
 .section-divider-wrap {
   background-color: var(--light);
   padding: 1.75rem 4vw;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: 1;
 }
 
 .section-divider-short {
@@ -1080,8 +1089,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   align-self: flex-start;
-  text-align: left;
+  text-align: center;
   margin-top: 1.8rem;
 }
 
@@ -1129,7 +1139,7 @@ footer {
   opacity: 0.85;
   margin-top: 0.1rem;
   line-height: 1.2;
-  text-align: left;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -1238,9 +1248,17 @@ footer {
     margin-right: auto;
     transform: none;
     padding: 1.5rem 1.25rem 0;
+    padding-top: 1.5rem;
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
+    align-self: auto;
+    text-align: center;
+  }
+
+  .hero-title,
+  .tagline {
+    text-align: center;
   }
 
   .hero-title {
