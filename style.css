@@ -1278,13 +1278,15 @@ footer {
   }
 
   .hero .btn {
-    position: static;
-    transform: none;
-    align-self: center;
-    margin-top: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: min(100%, 22rem);
+    position: absolute !important;
+    right: 5vw !important;
+    bottom: 5vh !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    align-self: auto;
+    margin: 0;
+    max-width: none;
     width: auto;
   }
 
