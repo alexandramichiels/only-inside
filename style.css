@@ -322,28 +322,48 @@ nav.site-nav {
   margin-bottom: 0;
 }
 
+/* === BUTTONS === */
+
+.btn {
+  margin-top: var(--space-block);
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Style « PRENDRE RENDEZ-VOUS » : bordure sauge, fond crème léger, texte terracotta */
 .espace-btn,
 .resa-btn,
-.hero .btn {
+.tarifs-btn,
+.btn.espace-btn,
+.btn.resa-btn,
+.btn.tarifs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   padding: 0.704rem 1.76rem;
   border: 1px solid #8FA89A;
+  border-radius: 0;
+  background-color: rgba(245, 239, 230, 0.5);
   color: #d3927c;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.638rem;
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.espace-btn,
-.resa-btn {
-  background-color: rgba(245, 239, 230, 0.5);
+  text-decoration: none;
 }
 
 .espace-btn:hover,
 .resa-btn:hover,
-.hero .btn:hover {
+.tarifs-btn:hover,
+.btn.espace-btn:hover,
+.btn.resa-btn:hover,
+.btn.tarifs-btn:hover,
+.btn.espace-btn:focus-visible,
+.btn.resa-btn:focus-visible,
+.btn.tarifs-btn:focus-visible {
   background-color: var(--accent-2);
   color: var(--light);
   border-color: transparent;
@@ -354,7 +374,17 @@ nav.site-nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0.704rem 1.76rem;
+  border: 1px solid #8FA89A;
+  border-radius: 0;
   background-color: rgba(245, 239, 230, 0.8);
+  color: #d3927c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.638rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
   margin: 0;
   position: absolute;
   right: 6vw;
@@ -365,24 +395,11 @@ nav.site-nav {
   z-index: 2;
 }
 
-/* === BUTTONS === */
-
-.btn {
-  margin-top: var(--space-block);
-  display: inline-block;
-  text-decoration: none;
-  background: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  padding: 0.8rem 1.5rem;
-  border-radius: 2px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn:hover,
-.btn:focus-visible {
-  background: var(--accent);
+.hero .btn:hover,
+.hero .btn:focus-visible {
+  background-color: var(--accent-2);
   color: var(--light);
+  border-color: transparent;
 }
 
 /* === SECTION BASE === */
@@ -546,8 +563,6 @@ section h2,
 .espace-btn {
   margin-top: 0;
   align-self: flex-start;
-  display: inline-block;
-  text-decoration: none;
 }
 
 main img {
@@ -938,7 +953,8 @@ main img {
   line-height: 1.85;
 }
 
-.tarifs-btn {
+.tarifs-btn,
+.btn.tarifs-btn {
   margin-top: var(--space-block);
 }
 
@@ -1060,10 +1076,10 @@ main img {
   flex-wrap: wrap;
 }
 
-.resa-btn {
+.resa-btn,
+.btn.resa-btn {
   margin-top: 0;
   min-width: 143px;
-  justify-content: center;
 }
 
 /* === SEPARATEURS === */
