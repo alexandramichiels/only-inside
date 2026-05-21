@@ -914,6 +914,38 @@ main img {
   line-height: 1.85;
 }
 
+@media (min-width: 769px) {
+  .eugenie-photo-stack {
+    position: relative;
+    display: block;
+    width: min(300px, 78vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .eugenie-logo-slot {
+    position: absolute;
+    z-index: 2;
+    top: 6%;
+    left: 4%;
+    width: auto;
+    padding: 0;
+    display: block;
+    transform: translate(-32%, -38%);
+    pointer-events: none;
+  }
+
+  .eugenie-logo-bg {
+    width: 142.5px;
+    max-width: none;
+  }
+
+  .eugenie-photo {
+    position: relative;
+    z-index: 1;
+  }
+}
+
 /* === TARIFS === */
 
 #tarifs {
@@ -972,7 +1004,7 @@ main img {
 
 .tarif-price {
   font-family: 'Montserrat', sans-serif;
-  font-size: calc(0.95rem - 2px) !important;
+  font-size: calc((0.95rem - 2px) * 1.1) !important;
   font-weight: 400;
   color: #6E5A4E;
   line-height: 1.85;
@@ -1529,7 +1561,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: calc(0.95rem - 2px) !important;
+    font-size: calc((0.95rem - 2px) * 1.1) !important;
     width: 100%;
     text-align: right;
     margin-top: 0.25rem;
@@ -1739,7 +1771,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: calc(0.95rem - 2px) !important;
+    font-size: calc((0.95rem - 2px) * 1.1) !important;
     text-align: center;
   }
 
