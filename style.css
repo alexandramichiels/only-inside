@@ -683,19 +683,32 @@ main img {
 }
 
 #soin .soin-layout {
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: stretch;
   gap: var(--space-split);
 }
 
-#soin .soin-main .citation {
-  margin-top: var(--space-split);
+#soin .soin-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-split);
+  width: 100%;
+}
+
+#soin .soin-layout > .citation {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  flex: none;
+  box-sizing: border-box;
 }
 
 #soin .soin-image {
   position: relative;
   z-index: 0;
   flex: 0 0 40%;
-  padding-bottom: var(--space-split);
+  padding-bottom: 0;
 }
 
 #soin .soin-photo {
@@ -792,14 +805,11 @@ main img {
     max-width: none;
   }
 
-  #soin .soin-main .citation {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+  #soin .soin-layout > .citation::after {
+    display: none;
   }
 
-  #soin .soin-main .citation::after {
-    width: calc(var(--space-split) + 71.428%);
+  #soin .soin-layout > .citation {
     border-radius: 0 24px 24px 0;
   }
 }
@@ -1563,14 +1573,18 @@ footer {
 
   #soin .soin-layout {
     gap: var(--space-block);
-    align-items: stretch;
+  }
+
+  #soin .soin-columns {
+    flex-direction: column;
+    gap: var(--space-block);
   }
 
   #soin .soin-content,
   #soin .soin-image {
     width: 100%;
     max-width: 100%;
-    align-self: stretch;
+    flex: none;
   }
 
   #soin .soin-main {
@@ -1578,17 +1592,8 @@ footer {
     width: 100%;
   }
 
-  #soin .soin-main .citation {
-    margin-top: 0;
-  }
-
-  #soin .soin-image {
-    padding-bottom: 0;
-    width: 100%;
-  }
-
   #soin .soin-photo,
-  #soin .soin-main .citation {
+  #soin .soin-layout > .citation {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -1602,8 +1607,7 @@ footer {
     border-radius: 24px;
   }
 
-  #soin .soin-main .citation,
-  #soin .citation {
+  #soin .soin-layout > .citation {
     font-size: clamp(1.15rem, 4vw, 1.45rem);
     padding: 1rem 1rem;
     border-radius: 24px;
