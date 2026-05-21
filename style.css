@@ -307,20 +307,39 @@ nav.site-nav {
   margin-bottom: 0;
 }
 
+.espace-btn,
+.resa-btn,
 .hero .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   padding: 0.704rem 1.76rem;
-  background-color: rgba(245, 239, 230, 0.8);
-  border-color: #8FA89A;
+  border: 1px solid #8FA89A;
   color: #d3927c;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.638rem;
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.espace-btn,
+.resa-btn {
+  background-color: rgba(245, 239, 230, 0.5);
+}
+
+.espace-btn:hover,
+.resa-btn:hover,
+.hero .btn:hover {
+  background-color: var(--accent-2);
+  color: var(--light);
+  border-color: transparent;
+}
+
+.hero .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(245, 239, 230, 0.8);
   margin: 0;
   position: absolute;
   right: 6vw;
@@ -329,12 +348,6 @@ nav.site-nav {
   left: auto;
   transform: none;
   z-index: 2;
-}
-
-.hero .btn:hover {
-  background-color: var(--accent-2);
-  color: var(--light);
-  border-color: transparent;
 }
 
 /* === BUTTONS === */
@@ -511,21 +524,6 @@ section h2,
   align-self: flex-start;
   display: inline-block;
   text-decoration: none;
-  background-color: rgba(245, 239, 230, 0.5);
-  border: 1px solid #8FA89A;
-  color: #d3927c;
-  padding: 0.704rem 1.76rem;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.638rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.espace-btn:hover {
-  background-color: var(--accent-2);
-  color: var(--light);
-  border-color: transparent;
 }
 
 main img {
@@ -1020,24 +1018,9 @@ main img {
 }
 
 .resa-btn {
-  background-color: rgba(245, 239, 230, 0.5);
-  border-color: #8FA89A;
-  color: #d3927c;
   margin-top: 0;
-  padding: 0.704rem 1.76rem;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.638rem;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
   min-width: 143px;
   justify-content: center;
-}
-
-.resa-btn:hover {
-  background-color: var(--accent-2);
-  color: var(--light);
-  border-color: transparent;
 }
 
 /* Séparateur entre Réserver et FAQ (ligne courte centrée, fond crème pour éviter la bande « tan » du body) */
