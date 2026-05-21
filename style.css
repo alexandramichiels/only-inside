@@ -1522,8 +1522,20 @@ footer {
   .espace-text {
     margin-left: 0;
     flex: none;
-    padding: 0 5vw 3rem !important;
+    padding: 0 0 3rem !important;
     padding-top: 0 !important;
+  }
+
+  #espace .espace-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #espace .espace-photo {
+    margin-left: auto;
+    margin-right: auto;
+    object-position: center center;
   }
 
   .espace-bande-photo {
@@ -1542,10 +1554,19 @@ footer {
 
   #soin .soin-layout {
     gap: var(--space-block);
+    align-items: stretch;
+  }
+
+  #soin .soin-content,
+  #soin .soin-image {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
   }
 
   #soin .soin-main {
     gap: var(--space-block);
+    width: 100%;
   }
 
   #soin .soin-main .citation {
@@ -1554,11 +1575,21 @@ footer {
 
   #soin .soin-image {
     padding-bottom: 0;
+    width: 100%;
+  }
+
+  #soin .soin-photo,
+  #soin .soin-main .citation {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
   }
 
   #soin .soin-photo {
     max-height: 420px;
-    width: 100%;
     border-radius: 24px;
   }
 
@@ -1566,12 +1597,7 @@ footer {
   #soin .citation {
     font-size: clamp(1.15rem, 4vw, 1.45rem);
     padding: 1rem 1rem;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    border-radius: 24px 0 0 24px;
+    border-radius: 24px;
   }
 
   #soin .citation cite {
