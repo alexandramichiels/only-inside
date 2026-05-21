@@ -818,10 +818,6 @@ main img {
 
 /* === EUGENIE === */
 
-#eugenie.section {
-  padding-top: 0;
-}
-
 .eugenie-container {
   display: flex;
   gap: var(--space-split);
@@ -851,8 +847,7 @@ main img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* Compense le padding sous le trait du séparateur (1.75rem) */
-  padding: 1.75rem 0 3.5rem;
+  padding: 0 0 3.5rem;
   box-sizing: border-box;
 }
 
@@ -977,12 +972,12 @@ main img {
 
 .tarif-price {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4.62rem !important;
+  font-size: calc(0.95rem - 2px) !important;
   font-weight: 400;
   color: #6E5A4E;
-  line-height: 0.95;
+  line-height: 1.85;
   margin: 0;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   flex-shrink: 0;
 }
 
@@ -1534,7 +1529,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: clamp(2.5rem, 12.32vw, 3.85rem) !important;
+    font-size: calc(0.95rem - 2px) !important;
     width: 100%;
     text-align: right;
     margin-top: 0.25rem;
@@ -1643,8 +1638,7 @@ footer {
   }
 
   .eugenie-logo-slot {
-    /* Compense le padding sous le trait du séparateur (1.25rem) */
-    padding: 1.5rem 0 2.75rem;
+    padding: 0 0 2.75rem;
   }
 
   .eugenie-logo-bg {
@@ -1745,7 +1739,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: clamp(2.12rem, 15.4vw, 3.08rem) !important;
+    font-size: calc(0.95rem - 2px) !important;
     text-align: center;
   }
 
