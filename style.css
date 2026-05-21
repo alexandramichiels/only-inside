@@ -788,9 +788,13 @@ main img {
 }
 
 @media (min-width: 769px) {
-  /* Extension jusqu'au bord droit de la photo (40 % + gap, rapport 56 % texte) */
+  #soin .soin-content {
+    max-width: none;
+  }
+
+  /* Jusqu'au bord droit de la photo : gap + colonne 40 % + paddings colonne texte */
   #soin .soin-main .citation::after {
-    width: calc(var(--space-split) + 71.428%);
+    width: calc(var(--space-split) + 13.714vw + 71.428%);
     border-radius: 0 24px 24px 0;
   }
 }
