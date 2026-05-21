@@ -397,7 +397,7 @@ section h2,
   font-size: 1.05rem;
 }
 
-/* ---- #espace ---- */
+/* === ESPACE === */
 
 #espace {
   background-color: #F5EFE6;
@@ -1357,11 +1357,12 @@ footer {
     padding: 0 5vw 3rem !important;
   }
 
-  #espace .espace-text {
+  #espace .espace-text,
+  .espace-text {
+    margin-left: 0;
+    flex: none;
+    padding: 0 5vw 3rem !important;
     padding-top: 0 !important;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-bottom: 3rem;
   }
 
   .espace-bande-photo {
@@ -1593,12 +1594,6 @@ footer {
   .container-split.reverse {
     flex-direction: column;
     gap: 1.5rem;
-  }
-
-  .espace-text {
-    margin-left: 0;
-    flex: none;
-    padding: 0 5vw 3rem !important;
   }
 
   .espace-image {
