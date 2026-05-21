@@ -576,9 +576,17 @@ section h2,
   display: none;
 }
 
+.br-mobile-only {
+  display: inline;
+}
+
 @media (min-width: 769px) {
   .br-desktop-only {
     display: inline;
+  }
+
+  .br-mobile-only {
+    display: none;
   }
 
   .espace-split {
@@ -780,7 +788,9 @@ main img {
 }
 
 @media (min-width: 769px) {
-  .citation::after {
+  /* Extension jusqu'au bord droit de la photo (40 % + gap, rapport 56 % texte) */
+  #soin .soin-main .citation::after {
+    width: calc(var(--space-split) + 71.428%);
     border-radius: 0 24px 24px 0;
   }
 }
@@ -1122,6 +1132,27 @@ main img {
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+@media (min-width: 901px) {
+  #aussi .aussi-panel {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #aussi .aussi-intro,
+  #aussi .aussi-meta {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  #aussi .aussi-label,
+  #aussi .aussi-intro p,
+  #aussi .aussi-meta p {
+    text-align: center;
+  }
 }
 
 /* === RESERVATION === */
@@ -1555,7 +1586,7 @@ footer {
 
   .tarif-top {
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 1rem;
   }
 
@@ -1571,8 +1602,9 @@ footer {
   .tarif-price {
     font-size: 1.21rem !important;
     width: 100%;
-    text-align: right;
+    text-align: left !important;
     margin-top: 0.25rem;
+    align-self: flex-start;
   }
 
   #reservation {
@@ -1781,16 +1813,19 @@ footer {
   #tarifs .tarif-card .tarif-top > p.tarif-price,
   .tarif-price {
     font-size: 1.21rem !important;
-    text-align: center;
+    text-align: left !important;
+    align-self: flex-start;
   }
 
   .tarif-top {
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
   }
 
   .tarif-top > div {
     width: 100%;
+    text-align: left;
   }
 
   .aussi-tags {
