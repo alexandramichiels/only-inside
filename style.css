@@ -988,7 +988,7 @@ main img {
   text-transform: uppercase;
 }
 
-/* ---- #reservation (contact) ---- */
+/* === RESERVATION === */
 
 #reservation {
   background: #f5efe6 !important;
@@ -1023,7 +1023,8 @@ main img {
   justify-content: center;
 }
 
-/* Séparateur entre Réserver et FAQ (ligne courte centrée, fond crème pour éviter la bande « tan » du body) */
+/* === SEPARATEURS === */
+
 .section-divider-wrap {
   background-color: var(--light);
   padding: 1.75rem 4vw;
@@ -1041,7 +1042,7 @@ main img {
   opacity: 0.4;
 }
 
-/* ---- #faq ---- */
+/* === FAQ === */
 
 #faq {
   background-color: #F5EFE6;
@@ -1093,7 +1094,7 @@ main img {
   line-height: 1.9;
 }
 
-/* ---- Footer ---- */
+/* === FOOTER === */
 
 footer {
   background-color: #d3927c;
@@ -1199,7 +1200,7 @@ footer {
   letter-spacing: 0.08em;
 }
 
-/* ---- Media queries ---- */
+/* === MEDIA QUERIES === */
 
 @media (min-width: 900px) {
   .nav-inner {
@@ -1499,13 +1500,6 @@ footer {
   .faq-item summary {
     font-size: 1.05rem;
     padding-right: 0.5rem;
-  }
-
-  #espace,
-  #soin,
-  #pour-qui,
-  #aussi {
-    background-attachment: scroll;
   }
 
   .soin-bande-defilante {
