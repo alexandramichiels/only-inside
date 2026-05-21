@@ -449,7 +449,6 @@ section h2,
 
 .espace-label,
 .eugenie-pretitle,
-.aussi-label,
 #reservation .section-label {
   display: block;
   font-family: "Montserrat", sans-serif;
@@ -462,6 +461,10 @@ section h2,
 
 .espace-label {
   margin-bottom: 1.8rem;
+}
+
+#reservation .section-label {
+  margin-bottom: 1.2rem;
 }
 
 .espace-separateur {
@@ -821,7 +824,7 @@ main img {
   line-height: 1.85;
 }
 
-/* ---- #tarifs ---- */
+/* === TARIFS === */
 
 #tarifs {
   background-color: #F5EFE6;
@@ -909,7 +912,7 @@ main img {
   margin-top: 2rem;
 }
 
-/* ---- #aussi ---- */
+/* === AUSSI === */
 
 #aussi {
   position: relative;
@@ -939,13 +942,8 @@ main img {
 }
 
 .aussi-label {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-size: 0.72rem;
-  color: #c2b295;
   margin-bottom: 1.2rem;
+  color: #c2b295;
 }
 
 .aussi-meta {
@@ -995,16 +993,6 @@ main img {
   background: #f5efe6 !important;
   text-align: center;
   padding: 6rem 1.5rem;
-}
-
-#reservation .section-label {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.2rem;
 }
 
 #reservation h2 {
