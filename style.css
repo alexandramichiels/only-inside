@@ -788,14 +788,44 @@ main img {
 }
 
 @media (min-width: 769px) {
-  #soin .soin-content {
-    max-width: none;
+  #soin .soin-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 56fr) minmax(0, 40fr);
+    column-gap: var(--space-split);
+    align-items: start;
   }
 
-  /* Jusqu'au bord droit de la photo : gap + colonne 40 % + paddings colonne texte */
-  #soin .soin-main .citation::after {
-    width: calc(var(--space-split) + 13.714vw + 71.428%);
+  #soin .soin-content,
+  #soin .soin-main,
+  #soin .soin-image {
+    display: contents;
+  }
+
+  #soin .soin-content > .espace-label,
+  #soin .soin-main > :not(.citation) {
+    grid-column: 1;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  #soin .soin-photo {
+    grid-column: 2;
+    grid-row: 1 / -2;
+    width: 100%;
+  }
+
+  #soin .soin-main > .citation {
+    grid-column: 1 / -1;
+    grid-row: -1;
+    width: calc(100% - 4vw);
+    margin-left: 4vw;
+    margin-right: 0;
+    box-sizing: border-box;
     border-radius: 0 24px 24px 0;
+  }
+
+  #soin .soin-main .citation::after {
+    display: none;
   }
 }
 
@@ -1141,21 +1171,21 @@ main img {
 @media (min-width: 901px) {
   #aussi .aussi-panel {
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   #aussi .aussi-intro,
   #aussi .aussi-meta {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     width: 100%;
   }
 
   #aussi .aussi-label,
   #aussi .aussi-intro p,
   #aussi .aussi-meta p {
-    text-align: center;
+    text-align: left;
   }
 }
 
