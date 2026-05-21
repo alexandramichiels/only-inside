@@ -927,7 +927,7 @@ main img {
 
 .tarif-price {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 7.8rem !important;
+  font-size: 6.6rem !important;
   font-weight: 400;
   color: #6E5A4E;
   line-height: 0.95;
@@ -1479,7 +1479,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: clamp(4.225rem, 20.8vw, 6.5rem) !important;
+    font-size: clamp(3.575rem, 17.6vw, 5.5rem) !important;
     width: 100%;
     text-align: right;
     margin-top: 0.25rem;
@@ -1690,7 +1690,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: clamp(3.575rem, 26vw, 5.2rem) !important;
+    font-size: clamp(3.025rem, 22vw, 4.4rem) !important;
     text-align: center;
   }
 
