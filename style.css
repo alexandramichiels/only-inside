@@ -314,14 +314,19 @@ nav.site-nav {
 
 .hero-text-panel .tagline {
   font-family: 'Montserrat', sans-serif;
-  font-size: calc((3.6rem + 2px) * 0.8);
   font-weight: 300;
   font-style: italic;
-  color: var(--text);
   letter-spacing: 0.12em;
   text-transform: none;
   margin-bottom: 0;
   text-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 769px) {
+  .hero-text-panel .tagline {
+    font-size: calc((3.6rem + 2px) * 0.64);
+    color: var(--accent);
+  }
 }
 
 /* === BUTTONS === */
@@ -633,14 +638,19 @@ main img {
 }
 
 #soin .soin-layout {
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-split);
+}
+
+#soin .soin-main .citation {
+  margin-top: var(--space-split);
 }
 
 #soin .soin-image {
   position: relative;
   z-index: 0;
   flex: 0 0 40%;
+  padding-bottom: var(--space-split);
 }
 
 #soin .soin-photo {
@@ -928,7 +938,7 @@ main img {
 }
 
 .tarif-price {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 6.6rem !important;
   font-weight: 400;
   color: #6E5A4E;
@@ -1369,6 +1379,7 @@ footer {
 
   .hero-text-panel .tagline {
     font-size: clamp(1rem, 5.2vw, 1.48rem);
+    color: var(--text);
     letter-spacing: 0.08em;
     line-height: 1.28;
     text-shadow: none;
