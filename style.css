@@ -447,7 +447,10 @@ section h2,
   justify-content: center;
 }
 
-.espace-label {
+.espace-label,
+.eugenie-pretitle,
+.aussi-label,
+#reservation .section-label {
   display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 0.72rem;
@@ -455,6 +458,9 @@ section h2,
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--gold);
+}
+
+.espace-label {
   margin-bottom: 1.8rem;
 }
 
@@ -714,7 +720,7 @@ main img {
   object-position: center;
 }
 
-/* ---- #eugenie ---- */
+/* === EUGENIE === */
 
 .eugenie-container {
   display: flex;
@@ -793,14 +799,7 @@ main img {
   border-left: 1px solid rgba(211, 146, 124, 0.3);
 }
 
-/* Même couleur que .espace-label (« Massage sensoriel… ») */
 .eugenie-pretitle {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
   margin-bottom: 0.9rem;
 }
 
