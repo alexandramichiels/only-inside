@@ -324,7 +324,7 @@ nav.site-nav {
 
 @media (min-width: 769px) {
   .hero-text-panel .tagline {
-    font-size: calc((3.6rem + 2px) * 0.64);
+    font-size: calc((3.6rem + 2px) * 0.576);
     color: var(--accent);
   }
 }
@@ -502,7 +502,7 @@ section h2,
 .espace-text {
   flex: 0 0 48%;
   padding: 0;
-  margin-left: 1.2rem;
+  margin-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -558,13 +558,13 @@ section h2,
 }
 
 .espace-photo {
-  width: calc(100% - 0.4cm);
+  width: 100%;
   height: 560px;
   min-height: 0;
   object-fit: cover;
   object-position: 62% center;
   display: block;
-  margin-right: 0.4cm;
+  margin: 0;
 }
 
 .espace-btn {
@@ -585,19 +585,26 @@ section h2,
     flex-direction: row-reverse;
   }
 
-  #espace .espace-text,
-  .espace-text {
-    margin-left: 0;
-    margin-right: 1.2rem;
-  }
-
-  .espace-photo {
-    margin-right: 0;
-    margin-left: 0.4cm;
-  }
-
   .espace-bande-layout {
     flex-direction: row;
+  }
+
+  .espace-split,
+  .espace-bande-layout {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    box-sizing: border-box;
+  }
+
+  .espace-text,
+  .espace-bande-text,
+  .espace-image,
+  .espace-bande-image {
+    flex: 0 0 48%;
   }
 }
 
@@ -613,11 +620,12 @@ main img {
 }
 
 .espace-bande-layout {
-  max-width: 1250px;
+  max-width: 1400px;
+  padding: 0 6vw;
 }
 
 .espace-bande-text {
-  flex: 0 0 46%;
+  flex: 0 0 48%;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -632,7 +640,7 @@ main img {
 }
 
 .espace-bande-image {
-  flex: 0 0 46%;
+  flex: 0 0 48%;
 }
 
 .espace-bande-photo-img {
@@ -969,7 +977,7 @@ main img {
 
 .tarif-price {
   font-family: 'Montserrat', sans-serif;
-  font-size: 6.6rem !important;
+  font-size: 4.62rem !important;
   font-weight: 400;
   color: #6E5A4E;
   line-height: 0.95;
@@ -1408,7 +1416,7 @@ footer {
   }
 
   .hero-text-panel .tagline {
-    font-size: clamp(1rem, 5.2vw, 1.48rem);
+    font-size: clamp(0.9rem, 4.68vw, 1.332rem);
     color: var(--text);
     letter-spacing: 0.08em;
     line-height: 1.28;
@@ -1526,7 +1534,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: clamp(3.575rem, 17.6vw, 5.5rem) !important;
+    font-size: clamp(2.5rem, 12.32vw, 3.85rem) !important;
     width: 100%;
     text-align: right;
     margin-top: 0.25rem;
@@ -1737,7 +1745,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: clamp(3.025rem, 22vw, 4.4rem) !important;
+    font-size: clamp(2.12rem, 15.4vw, 3.08rem) !important;
     text-align: center;
   }
 
