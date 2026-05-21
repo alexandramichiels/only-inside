@@ -280,24 +280,24 @@ nav.site-nav {
   z-index: 1;
   width: fit-content;
   max-width: 520px;
-  margin-left: auto !important;
-  margin-right: 6vw !important;
+  margin-left: 6vw !important;
+  margin-right: auto !important;
   margin-top: 16vh;
   align-self: flex-start;
   padding: 1.15rem 1.4rem;
   background-color: rgba(245, 239, 230, 0.8);
   border: none;
   border-radius: 24px;
-  text-align: right !important;
+  text-align: left !important;
   box-sizing: border-box;
 }
 
 .hero-title,
 .tagline {
-  margin-left: auto !important;
-  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
   padding-left: 0;
-  text-align: right !important;
+  text-align: left !important;
 }
 
 .hero-title {
@@ -440,7 +440,7 @@ section p, section h2, section h3,
   justify-content: center;
   width: 100%;
   min-height: 0;
-  padding: 5rem 4vw 5rem;
+  padding: 5.5rem 4vw 4.5rem;
 }
 
 .espace-top-quote {
@@ -514,7 +514,7 @@ section p, section h2, section h3,
   height: 560px;
   min-height: 0;
   object-fit: cover;
-  object-position: center;
+  object-position: 38% center;
   display: block;
   margin-right: 0.4cm;
 }
@@ -763,7 +763,7 @@ main img {
 
 .eugenie-logo-bg {
   display: block;
-  width: 72px;
+  width: 86px;
   height: auto;
   object-fit: contain;
   object-position: center;
@@ -1318,21 +1318,21 @@ footer {
   }
 
   .hero-text-panel {
-    margin-left: auto !important;
-    margin-right: 5vw !important;
+    margin-left: 5vw !important;
+    margin-right: auto !important;
     margin-top: 6vh;
     padding: 1rem 1.15rem;
     max-width: min(80%, 520px);
     width: fit-content;
     align-self: flex-start;
-    text-align: right !important;
+    text-align: left !important;
   }
 
   .hero-title,
   .tagline {
-    text-align: right !important;
-    margin-left: auto !important;
-    margin-right: 0 !important;
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
   }
 
   .hero-title {
@@ -1370,18 +1370,27 @@ footer {
   }
 
   .espace-quote-band {
-    padding: 3.5rem 5vw;
-    align-items: center;
+    padding: 5.5rem 5vw 3rem !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .espace-top-quote {
     font-size: clamp(1.35rem, 4.5vw, 1.85rem);
     padding: 0 0.25rem;
+    margin: 0 !important;
   }
 
   .espace-split {
     flex-direction: column;
-    padding: 0 5vw 3rem;
+    padding: 0 5vw 3rem !important;
+  }
+
+  #espace .espace-text {
+    padding-top: 0 !important;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 3rem;
   }
 
   .espace-bande-photo {
@@ -1577,7 +1586,7 @@ footer {
   }
 
   .eugenie-logo-bg {
-    width: 56px;
+    width: 67px;
   }
 
   .eugenie-photo {
@@ -1610,7 +1619,7 @@ footer {
   .espace-text {
     margin-left: 0;
     flex: none;
-    padding: 2.5rem 5vw 3rem;
+    padding: 0 5vw 3rem !important;
   }
 
   .espace-image {
