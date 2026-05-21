@@ -337,7 +337,7 @@ nav.site-nav {
   border-color: transparent;
 }
 
-/* ---- Button ---- */
+/* === BUTTONS === */
 
 .btn {
   margin-top: 2.2rem;
@@ -449,6 +449,7 @@ section h2,
 
 .espace-label,
 .eugenie-pretitle,
+.aussi-label,
 #reservation .section-label {
   display: block;
   font-family: "Montserrat", sans-serif;
@@ -456,14 +457,15 @@ section h2,
   font-weight: 400;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--gold);
 }
 
 .espace-label {
+  color: var(--gold);
   margin-bottom: 1.8rem;
 }
 
 #reservation .section-label {
+  color: var(--gold);
   margin-bottom: 1.2rem;
 }
 
@@ -803,6 +805,7 @@ main img {
 }
 
 .eugenie-pretitle {
+  color: var(--gold);
   margin-bottom: 0.9rem;
 }
 
@@ -942,8 +945,8 @@ main img {
 }
 
 .aussi-label {
-  margin-bottom: 1.2rem;
   color: #c2b295;
+  margin-bottom: 1.2rem;
 }
 
 .aussi-meta {
