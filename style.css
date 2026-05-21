@@ -9,6 +9,14 @@
   --accent-2: #e79f81;
   --sage: #8FA89A;
   --gold: #CBBFA3;
+
+  /* Échelle d'espacement (rythme vertical homogène) */
+  --space-section-y: 5rem;
+  --space-split: 3rem;
+  --space-block: 2rem;
+  --space-text: 1rem;
+  --space-tight: 0.5rem;
+  --space-divider-y: 1.75rem;
 }
 
 *,
@@ -66,7 +74,7 @@ a {
 
 .container-split {
   max-width: 1400px;
-  gap: 4rem;
+  gap: var(--space-split);
   display: flex;
   align-items: center;
 }
@@ -88,11 +96,18 @@ a {
 
 .split-text {
   flex: 1;
-  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-block);
+  padding: 0;
 }
 
-.split-text h2 {
-  margin-bottom: 1.5rem;
+.split-text h2,
+.soin-main h2,
+.espace-text h2,
+.espace-bande-text h2,
+.eugenie-text h2 {
+  margin-bottom: 0;
 }
 
 .split-text p {
@@ -353,7 +368,7 @@ nav.site-nav {
 /* === BUTTONS === */
 
 .btn {
-  margin-top: 2.2rem;
+  margin-top: var(--space-block);
   display: inline-block;
   text-decoration: none;
   background: transparent;
@@ -373,7 +388,7 @@ nav.site-nav {
 /* === SECTION BASE === */
 
 .section {
-  padding: 80px 0;
+  padding: var(--space-section-y) 0;
   background: var(--bg);
 }
 
@@ -391,7 +406,7 @@ section h2 {
   font-style: normal;
   letter-spacing: 0.05em;
   line-height: 1.28;
-  margin-bottom: 1.8rem;
+  margin-bottom: var(--space-block);
   color: var(--text);
 }
 
@@ -406,8 +421,17 @@ section h2,
 .container p,
 .container-split p {
   line-height: 1.95;
-  margin-bottom: 0.9rem;
+  margin-bottom: var(--space-text);
   font-size: 1.05rem;
+}
+
+.soin-main p,
+.soin-main li,
+.espace-text p,
+.espace-bande-text p,
+.eugenie-text p,
+.split-text p {
+  margin-bottom: 0;
 }
 
 /* === ESPACE === */
@@ -429,7 +453,7 @@ section h2,
   justify-content: center;
   width: 100%;
   min-height: 0;
-  padding: 5rem 4vw 4.75rem;
+  padding: var(--space-section-y) 4vw calc(var(--space-section-y) * 0.95);
 }
 
 .espace-top-quote {
@@ -458,6 +482,7 @@ section h2,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: var(--space-block);
 }
 
 .espace-label,
@@ -474,19 +499,19 @@ section h2,
 
 .espace-label {
   color: var(--gold);
-  margin-bottom: 1.8rem;
+  margin-bottom: 0;
 }
 
 #reservation .section-label {
   color: var(--gold);
-  margin-bottom: 1.2rem;
+  margin-bottom: 0;
 }
 
 .espace-separateur {
   width: 2rem;
   height: 1px;
   background: #6E5A4E;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .espace-h2-italic {
@@ -499,7 +524,6 @@ section h2,
   font-size: 1rem;
   color: var(--secondary-text);
   line-height: 1.9;
-  margin-bottom: 1rem;
   max-width: 48ch;
 }
 
@@ -520,7 +544,7 @@ section h2,
 }
 
 .espace-btn {
-  margin-top: 2.5rem;
+  margin-top: 0;
   align-self: flex-start;
   display: inline-block;
   text-decoration: none;
@@ -534,7 +558,7 @@ main img {
 
 .espace-bande-photo {
   background-color: #F5EFE6;
-  padding: 5rem 0;
+  padding: var(--space-section-y) 0;
 }
 
 .espace-bande-layout {
@@ -544,6 +568,9 @@ main img {
 .espace-bande-text {
   flex: 0 0 46%;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-block);
 }
 
 .espace-bande-text p {
@@ -551,7 +578,6 @@ main img {
   font-size: 1.05rem;
   line-height: 2;
   max-width: 50ch;
-  margin-bottom: 0.9rem;
 }
 
 .espace-bande-image {
@@ -584,11 +610,14 @@ main img {
 #soin .soin-main {
   background: transparent;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-block);
 }
 
 #soin .soin-layout {
   align-items: center;
-  gap: 3.5rem;
+  gap: var(--space-split);
 }
 
 #soin .soin-image {
@@ -607,7 +636,7 @@ main img {
 }
 
 #soin .soin-main .soin-bullets + h2 {
-  margin-top: 2.5rem;
+  margin-top: 0;
 }
 
 #soin .soin-main p,
@@ -620,12 +649,14 @@ main img {
 .soin-bullets {
   list-style: none;
   padding-left: 0;
-  margin-top: 0.8rem;
-  margin-bottom: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-tight);
 }
 
 .soin-bullets li {
-  margin-bottom: 0.45rem;
+  margin-bottom: 0;
   position: relative;
   padding-left: 1.2rem;
 }
@@ -649,7 +680,7 @@ main img {
   border-right: 0;
   border-bottom: 0;
   padding: 1rem 1.2rem;
-  margin: calc(2.6rem + 20px) 0 0;
+  margin: 0;
   width: 100%;
   max-width: none;
   text-align: left;
@@ -677,7 +708,7 @@ main img {
 .citation cite {
   display: block;
   font-size: 1.3rem;
-  margin-top: 0.65rem;
+  margin-top: var(--space-tight);
   color: #d3927c;
   font-style: italic;
   letter-spacing: 0.04em;
@@ -700,9 +731,6 @@ main img {
   background-color: #F5EFE6;
 }
 
-#pour-qui .container-split {
-  gap: 3rem;
-}
 
 #pour-qui .split-text {
   flex: 0 0 52%;
@@ -725,9 +753,13 @@ main img {
 
 /* === EUGENIE === */
 
+#eugenie.section {
+  padding-top: 0;
+}
+
 .eugenie-container {
   display: flex;
-  gap: 3rem;
+  gap: var(--space-split);
   max-width: 1200px;
   align-items: center;
 }
@@ -744,7 +776,7 @@ main img {
   flex-direction: column;
   align-items: center;
   gap: 0;
-  margin: 2.5rem auto 0;
+  margin: 0 auto;
   flex-shrink: 0;
   width: 100%;
 }
@@ -754,7 +786,8 @@ main img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 2rem 0 2rem;
+  /* Compense le padding sous le trait du séparateur (1.75rem) */
+  padding: 1.75rem 0 3.5rem;
   box-sizing: border-box;
 }
 
@@ -782,7 +815,7 @@ main img {
 
 .eugenie-photo-caption {
   position: static;
-  margin-top: 2.25rem;
+  margin-top: var(--space-block);
   margin-left: auto;
   margin-right: auto;
   max-width: 34ch;
@@ -798,16 +831,13 @@ main img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: var(--space-block);
   padding: 0 0 0 3rem;
   border-left: 1px solid rgba(211, 146, 124, 0.3);
 }
 
 .eugenie-pretitle {
   color: var(--gold);
-  margin-bottom: 0.9rem;
-}
-
-.eugenie-text h2 {
   margin-bottom: 0;
 }
 
@@ -817,11 +847,10 @@ main img {
   width: 36px;
   height: 1px;
   background: #d3927c;
-  margin: 1.1rem 0 1.8rem;
+  margin: var(--space-text) 0 var(--space-block);
 }
 
 .eugenie-text p {
-  margin-bottom: 0.7rem;
   line-height: 1.85;
 }
 
@@ -836,7 +865,7 @@ main img {
 }
 
 #tarifs h2 {
-  margin-bottom: 1.35rem;
+  margin-bottom: var(--space-block);
   color: #6E5A4E;
 }
 
@@ -844,7 +873,7 @@ main img {
   width: 100%;
   height: 1px;
   background-color: #e8dfd4;
-  margin: 1.15rem 0 1.05rem;
+  margin: var(--space-block) 0;
 }
 
 .tarif-card {
@@ -859,7 +888,7 @@ main img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1.25rem;
+  gap: var(--space-block);
 }
 
 .tarif-title {
@@ -897,7 +926,7 @@ main img {
   font-size: calc(0.95rem - 2px);
   font-style: italic;
   color: var(--gold);
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-text);
 }
 
 /* Paragraphes du bloc tarif uniquement (pas les titres dans .tarif-top) */
@@ -910,7 +939,7 @@ main img {
 }
 
 .tarifs-btn {
-  margin-top: 2rem;
+  margin-top: var(--space-block);
 }
 
 /* === AUSSI === */
@@ -918,45 +947,52 @@ main img {
 #aussi {
   position: relative;
   margin: 0;
-  padding: 4rem 0 5rem;
+  padding: var(--space-section-y) 0;
   background: #f5efe6;
 }
 
 #aussi .aussi-layout {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  gap: 2.4rem;
+  gap: var(--space-split);
   align-items: center;
 }
 
 .aussi-panel {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-block);
+}
+
+.aussi-intro,
+.aussi-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-text);
 }
 
 .aussi-intro p,
 .aussi-meta p {
   color: #6c6157;
-}
-
-.aussi-intro > p:first-of-type {
-  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .aussi-label {
   color: #c2b295;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0;
 }
 
 .aussi-meta {
-  margin-top: 1.4rem;
-  padding-top: 1.2rem;
+  margin-top: 0;
+  padding-top: 0;
   border-top: 0;
 }
 
 .aussi-visual {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-block);
 }
 
 .aussi-photo {
@@ -993,17 +1029,24 @@ main img {
 #reservation {
   background: #f5efe6 !important;
   text-align: center;
-  padding: 6rem 1.5rem;
+  padding: calc(var(--space-section-y) * 1.2) 1.5rem;
+}
+
+#reservation .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-block);
 }
 
 #reservation h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   text-align: center;
 }
 
 #reservation p {
   color: #5C4A3A;
-  margin: 0 auto 0.8rem;
+  margin: 0 auto;
   max-width: 72ch;
   font-size: 1.05rem;
   text-align: center;
@@ -1011,9 +1054,9 @@ main img {
 
 .contact-btns {
   display: flex;
-  gap: 1.2rem;
+  gap: var(--space-text);
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 0;
   flex-wrap: wrap;
 }
 
@@ -1027,7 +1070,7 @@ main img {
 
 .section-divider-wrap {
   background-color: var(--light);
-  padding: 1.75rem 4vw;
+  padding: var(--space-divider-y) 4vw;
   margin-top: -1px;
   margin-bottom: -1px;
   position: relative;
@@ -1049,8 +1092,8 @@ main img {
 }
 
 .faq-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: var(--space-block);
+  padding-bottom: var(--space-block);
   border-bottom: 1px solid #dec8b5;
 }
 
@@ -1088,7 +1131,7 @@ main img {
 }
 
 .faq-item p {
-  margin-top: 1rem;
+  margin-top: var(--space-text);
   font-size: 1rem;
   color: #6E5A4E;
   line-height: 1.9;
@@ -1256,8 +1299,14 @@ footer {
     font-size: 1rem;
   }
 
+  :root {
+    --space-section-y: 3.5rem;
+    --space-split: 2rem;
+    --space-divider-y: 1.25rem;
+  }
+
   .section {
-    padding: 56px 0;
+    padding: var(--space-section-y) 0;
   }
 
   section h2 {
@@ -1317,7 +1366,7 @@ footer {
   }
 
   .espace-quote-band {
-    padding: 5rem 5vw 3.25rem !important;
+    padding: var(--space-section-y) 5vw calc(var(--space-section-y) * 0.95) !important;
     align-items: center !important;
     justify-content: center !important;
   }
@@ -1342,7 +1391,7 @@ footer {
   }
 
   .espace-bande-photo {
-    padding: 3rem 0;
+    padding: var(--space-section-y) 0;
   }
 
   .espace-bande-layout {
@@ -1354,9 +1403,6 @@ footer {
     max-width: none;
   }
 
-  #soin .soin-layout {
-    gap: 2rem;
-  }
 
   #soin .soin-photo {
     max-height: 420px;
@@ -1424,7 +1470,7 @@ footer {
   }
 
   #reservation {
-    padding: 4rem 1.25rem;
+    padding: var(--space-section-y) 1.25rem;
   }
 
   #reservation h2 {
@@ -1439,8 +1485,8 @@ footer {
   .contact-btns {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: var(--space-text);
+    margin-top: 0;
   }
 
   .resa-btn {
@@ -1521,17 +1567,13 @@ footer {
     min-height: 0;
   }
 
-  #eugenie.section {
-    padding-top: 1.25rem;
-  }
-
   .eugenie-photo-stack {
     margin-top: 0;
   }
 
   .eugenie-logo-slot {
-    padding: 2.5rem 0 2.5rem;
-    min-height: 6.5rem;
+    /* Compense le padding sous le trait du séparateur (1.25rem) */
+    padding: 1.5rem 0 2.75rem;
   }
 
   .eugenie-logo-bg {
@@ -1562,7 +1604,7 @@ footer {
   .container-split,
   .container-split.reverse {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--space-split);
   }
 
   .espace-image {
@@ -1605,7 +1647,7 @@ footer {
   }
 
   .section-divider-wrap {
-    padding: 1.25rem 5vw;
+    padding: var(--space-divider-y) 5vw;
   }
 }
 
@@ -1652,6 +1694,6 @@ footer {
 
 @media (min-width: 760px) {
   .section {
-    padding: 120px 0;
+    padding: calc(var(--space-section-y) * 1.6) 0;
   }
 }
