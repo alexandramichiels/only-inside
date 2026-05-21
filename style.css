@@ -110,13 +110,16 @@ a {
   z-index: 20;
   background: transparent;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
 }
 
 nav {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   letter-spacing: 0.08em;
-  padding: 0 4vw;
+  padding: 0;
 }
 
 .site-nav.scrolled {
@@ -124,12 +127,16 @@ nav {
 }
 
 .nav-inner {
-  min-height: 72px;
+  height: 64px;
+  min-height: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 4vw;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -138,11 +145,12 @@ nav {
   text-decoration: none;
   display: flex;
   align-items: center;
-  line-height: 1;
+  line-height: 0;
+  flex-shrink: 0;
 }
 
 .nav-logo {
-  height: 48px;
+  height: 44px;
   width: auto;
   display: block;
 }
@@ -177,9 +185,15 @@ nav {
   background: transparent;
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
-  padding: 0.4rem;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .burger span {
@@ -192,6 +206,7 @@ nav {
   display: none;
   background: var(--light);
   padding: 0 4vw 1rem;
+  line-height: 1.5;
 }
 
 .mobile-menu.open {
@@ -234,19 +249,20 @@ nav {
   z-index: 0;
 }
 
-.hero .container {
+.hero-text-panel {
   position: relative;
   z-index: 1;
-  background-color: transparent;
-  backdrop-filter: none;
-  padding: 0;
+  width: fit-content;
   max-width: 520px;
   margin-left: auto !important;
   margin-right: 6vw !important;
+  margin-top: 16vh;
   align-self: flex-start;
-  padding-top: 16vh;
+  padding: 1.15rem 1.4rem;
+  background-color: rgba(245, 239, 230, 0.8);
+  border: 1px solid #8FA89A;
   text-align: right !important;
-  transform: none;
+  box-sizing: border-box;
 }
 
 .hero-title,
@@ -276,6 +292,16 @@ nav {
   letter-spacing: 0.12em;
   text-transform: none;
   margin-bottom: 1.5rem;
+}
+
+.hero-text-panel .hero-title {
+  text-shadow: none;
+}
+
+.hero-text-panel .tagline {
+  color: var(--secondary-text);
+  text-shadow: none;
+  margin-bottom: 0;
 }
 
 .hero .btn {
@@ -1259,15 +1285,13 @@ footer {
     padding: 0 0 1.5rem;
   }
 
-  .hero .container {
+  .hero-text-panel {
     margin-left: auto !important;
     margin-right: 5vw !important;
-    transform: none;
-    padding: 1.5rem 1.25rem 0;
-    padding-top: 6vh;
-    max-width: 80%;
-    width: auto;
-    box-sizing: border-box;
+    margin-top: 6vh;
+    padding: 1rem 1.15rem;
+    max-width: min(80%, 520px);
+    width: fit-content;
     align-self: flex-start;
     text-align: right !important;
   }
@@ -1431,11 +1455,20 @@ footer {
     box-sizing: border-box;
   }
 
-  .burger {
-    min-width: 44px;
-    min-height: 44px;
-    align-items: center;
-    justify-content: center;
+  .site-nav .nav-inner {
+    height: 52px;
+    padding: 0 4vw;
+  }
+
+  .site-nav .nav-logo {
+    height: 36px;
+  }
+
+  .site-nav .burger {
+    width: 40px;
+    height: 40px;
+    min-width: 0;
+    min-height: 0;
   }
 
   .faq-item summary {
@@ -1549,12 +1582,12 @@ footer {
     padding-top: 80px;
   }
 
-  .nav-inner {
-    min-height: 64px;
+  .site-nav .nav-inner {
+    height: 48px;
   }
 
-  .nav-logo {
-    height: 40px;
+  .site-nav .nav-logo {
+    height: 32px;
   }
 
   .logo {
