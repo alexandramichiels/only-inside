@@ -572,6 +572,35 @@ section h2,
   align-self: flex-start;
 }
 
+.br-desktop-only {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .br-desktop-only {
+    display: inline;
+  }
+
+  .espace-split {
+    flex-direction: row-reverse;
+  }
+
+  #espace .espace-text,
+  .espace-text {
+    margin-left: 0;
+    margin-right: 1.2rem;
+  }
+
+  .espace-photo {
+    margin-right: 0;
+    margin-left: 0.4cm;
+  }
+
+  .espace-bande-layout {
+    flex-direction: row;
+  }
+}
+
 main img {
   border-radius: 24px;
 }
@@ -684,14 +713,15 @@ main img {
 
 .soin-bullets li {
   margin-bottom: 0;
-  position: relative;
-  padding-left: 1.2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  padding-left: 0;
 }
 
 .soin-bullets li::before {
   content: "—";
-  position: absolute;
-  left: 0;
+  flex-shrink: 0;
   color: var(--text);
   opacity: 0.4;
 }
