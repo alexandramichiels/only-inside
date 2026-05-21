@@ -788,44 +788,19 @@ main img {
 }
 
 @media (min-width: 769px) {
-  #soin .soin-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 56fr) minmax(0, 40fr);
-    column-gap: var(--space-split);
-    align-items: start;
+  #soin .soin-content {
+    max-width: none;
   }
 
-  #soin .soin-content,
-  #soin .soin-main,
-  #soin .soin-image {
-    display: contents;
-  }
-
-  #soin .soin-content > .espace-label,
-  #soin .soin-main > :not(.citation) {
-    grid-column: 1;
-    padding-left: 4vw;
-    padding-right: 4vw;
-  }
-
-  #soin .soin-photo {
-    grid-column: 2;
-    grid-row: 1 / -2;
+  #soin .soin-main .citation {
     width: 100%;
-  }
-
-  #soin .soin-main > .citation {
-    grid-column: 1 / -1;
-    grid-row: -1;
-    width: calc(100% - 4vw);
-    margin-left: 4vw;
+    margin-left: 0;
     margin-right: 0;
-    box-sizing: border-box;
-    border-radius: 0 24px 24px 0;
   }
 
   #soin .soin-main .citation::after {
-    display: none;
+    width: calc(var(--space-split) + 71.428%);
+    border-radius: 0 24px 24px 0;
   }
 }
 
