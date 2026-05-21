@@ -779,6 +779,16 @@ main img {
   letter-spacing: 0.04em;
 }
 
+@media (min-width: 769px) {
+  .citation {
+    border-radius: 0 24px 24px 0;
+  }
+
+  .citation::after {
+    border-radius: 0 24px 24px 0;
+  }
+}
+
 .soin-bande-defilante {
   position: relative;
   height: 500px;
@@ -1004,7 +1014,7 @@ main img {
 
 .tarif-price {
   font-family: 'Montserrat', sans-serif;
-  font-size: calc((0.95rem - 2px) * 1.1) !important;
+  font-size: calc((0.95rem - 2px) * 1.21) !important;
   font-weight: 400;
   color: #6E5A4E;
   line-height: 1.85;
@@ -1561,7 +1571,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: calc((0.95rem - 2px) * 1.1) !important;
+    font-size: calc((0.95rem - 2px) * 1.21) !important;
     width: 100%;
     text-align: right;
     margin-top: 0.25rem;
@@ -1771,7 +1781,7 @@ footer {
   }
 
   .tarif-price {
-    font-size: calc((0.95rem - 2px) * 1.1) !important;
+    font-size: calc((0.95rem - 2px) * 1.21) !important;
     text-align: center;
   }
 
